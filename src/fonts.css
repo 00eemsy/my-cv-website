@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "england";
+  src: url(../fonts/england.woff2);
+}
+
+@font-face {
+  font-family: "sh";
+  src: url(../fonts/SHPinscher-Regular.woff2);
+}
+
+.cursive {
+  font-family: "england";
+}
+
+.pixel {
+  font-family: "sh";
+}
