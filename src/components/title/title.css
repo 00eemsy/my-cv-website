@@ -48,7 +48,7 @@ h3 {
 }
 
 .top-two-column {
-    margin-top: 25vh;
+    margin-top: 20vh;
     margin-bottom: -5em;
 }
 
@@ -65,4 +65,64 @@ h3 {
 
 .spacer {
     margin: 5em
+}
+
+.two-star {
+    position: absolute;
+    width: 15%;
+    top: 20vh;
+    left: 20vw;
+
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: .5s;
+}
+
+.loopy {
+    position: absolute;
+    width: 17%;
+    top: 30vh;
+    left: 67vw;
+
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: .5s;
+}
+
+.poof {
+    position: absolute;
+    width: 12%;
+    top: 55vh;
+    left: 23vw;
+
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: .5s;
+}
+
+.plus {
+    position: absolute;
+    width: 7%;
+    top: 55vh;
+    left: 65vw;
+
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: .5s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    /* 50% {
+        transform: rotate(25deg);
+    } */
+    100% {
+        transform: rotate(5deg);
+    }
 }

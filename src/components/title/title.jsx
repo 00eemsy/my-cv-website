@@ -48,6 +48,23 @@ const TitlePage = (() => {
                 </div>
 
             </div>
+
+            <img src="./sparkles/2 stars.png" 
+                alt="two pixelated 'x' shaped stars, the larger one being a '+' sign and the smaller one being a 'x'"
+                className='two-star'></img>
+
+            <img src="./sparkles/+.png"
+                alt="a pixelated '+' shaped star"
+                className='plus'></img>
+
+            <img src="./sparkles/loopy.png"
+                alt="a pixelated loose spiral with three revolutions"
+                className='loopy'></img>
+
+            <img src="./sparkles/poof.png"
+                alt="a pixelated gust of wind"
+                className='poof'></img>
+
         </div>
     )
 });
