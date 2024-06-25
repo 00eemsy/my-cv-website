@@ -1,9 +1,13 @@
 import './App.css';
 import TitlePage from './components/title/title'
+import ElevatorPitch from './components/elevatorPitch/elevatorPitch';
 
 function App() {
   return (
-    <TitlePage />
+    <div>
+        <TitlePage />
+        <ElevatorPitch />
+    </div>
   );
 }
 

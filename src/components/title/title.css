@@ -1,70 +1,89 @@
 .title {
-    display: grid;
+    display: flex;
     justify-content: center;
     justify-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100vw;
+
+    /* border: 1px; */
 }
 
-h1 {
+.title h1 {
     text-align: center;
     background: linear-gradient(.25turn, #b1e0ed, #e2e9ec, #b1e0ed);
     background-size: auto 40%;
     background-repeat: no-repeat;
     background-position: center center;
 
-    border-radius: 35%;
+    border-radius: 33%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
-h2 {
+.title h2 {
     margin: 0;
     text-align: center;
 }
 
-h3 {
+.title h3 {
     font-size: 2em;
     margin: 0;
     text-align: center;
 }
 
-.header1-cursive {
+.title .header1-cursive {
     font-size: 8em;
     padding-right: 1.5vw;
 }
 
-.header1-pixel {
+.title .header1-pixel {
     font-size: 5em;
 }
 
-.header2-cursive {
+.title .header2-cursive {
     font-size: 3em;
 }
 
-.header2-pixel {
+.title .header2-pixel {
     font-size: 1.5em;
 }
 
 .two-column {
-    display: grid;
-    grid-template-columns: 30vw 30vw;
+    display: flex;
+
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .top-two-column {
-    margin-top: 20vh;
-    margin-bottom: -5em;
+    flex-direction: row-reverse;
 }
 
 .bottom-two-column {
-    margin-top: -5em;
-}
+    flex-direction: row;
+} 
 
 .two-row {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.spacer {
-    margin: 5em
+/* .spacer {
+    margin: 5em;
+} */
+
+.two-star, .loopy, .poof, .plus {
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: .5s;
+    animation-delay: 3ms;
 }
 
 .two-star {
@@ -72,23 +91,13 @@ h3 {
     width: 15%;
     top: 20vh;
     left: 20vw;
-
-    animation-name: rotate;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: .5s;
 }
 
 .loopy {
     position: absolute;
-    width: 17%;
-    top: 30vh;
+    width: 10%;
+    top: 27vh;
     left: 67vw;
-
-    animation-name: rotate;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: .5s;
 }
 
 .poof {
@@ -96,28 +105,18 @@ h3 {
     width: 12%;
     top: 55vh;
     left: 23vw;
-
-    animation-name: rotate;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: .5s;
 }
 
 .plus {
     position: absolute;
     width: 7%;
-    top: 55vh;
+    top: 60vh;
     left: 65vw;
-
-    animation-name: rotate;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: .5s;
 }
 
 @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(-5deg);
     }
     /* 50% {
         transform: rotate(25deg);
