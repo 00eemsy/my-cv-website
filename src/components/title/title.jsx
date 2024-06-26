@@ -1,9 +1,114 @@
+import { useEffect, useState } from "react";
 import "../../fonts.css";
 import "./title.css";
 import Typewriter from "typewriter-effect";
 
-const TitlePage = (() => {
+function TitlePage() {
 
+    const [twoStar, setTwoStar] = useState(null);
+    const [plus, setPlus] = useState(null);
+    const [loopy, setLoopy] = useState(null);
+    const [poof, setPoof] = useState(null);
+
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    
+    useEffect(() => {
+        const emilyRect = getRect();
+
+        positionTwoStar(emilyRect);
+        positionPlus(emilyRect);
+        positionLoopy(emilyRect);
+        positionPoof(emilyRect);
+
+    }, []);
+
+    function getRect() {
+        const emily = document.getElementById('emily');
+        const emilyRect = emily.getBoundingClientRect(); 
+
+        return emilyRect;
+    }
+
+    // function getLowerRect() {
+    //     const lower = document.getElementById('bottom-subtext');
+    //     const lowerRect = lower.getBoundingClientRect();
+
+    //     return lowerRect;
+    // }
+
+    function positionTwoStar(emilyRect) {
+
+        let twoStarStyle = {
+            top: emilyRect.top - .1 * screenHeight,
+            left: emilyRect.left + .05 * screenWidth,
+        }
+
+        const twoStarImg = (
+            <img src="./sparkles/2 stars.png" 
+                alt="two pixelated 'x' shaped stars, the larger one being a '+' sign and the smaller one being a 'x'"
+                style={twoStarStyle}
+                className='two-star'
+                ></img>
+        );
+
+        setTwoStar(twoStarImg);
+    }
+
+    function positionPlus(emilyRect) {
+
+        let plusStyle = {
+            top: emilyRect.top + .5 * screenHeight,
+            left: emilyRect.left + .6 * screenWidth,
+        }
+
+        const plusImg = (
+            <img src="./sparkles/+.png"
+                alt="a pixelated '+' shaped star"
+                style={plusStyle}
+                className='plus'
+                ></img>
+        );
+
+        setPlus(plusImg);
+    }
+
+    function positionLoopy(emilyRect) {
+
+        let loopyStyle = {
+            top: emilyRect.top - .025 * screenHeight,
+            left: emilyRect.left + .6 * screenWidth,
+        }
+
+        const loopyImg = (
+            <img src="./sparkles/loopy.png"
+                alt="a pixelated loose spiral with three revolutions"
+                style={loopyStyle}
+                className='loopy'
+                ></img>
+        );
+
+        setLoopy(loopyImg);
+    }
+
+    function positionPoof(emilyRect) {
+
+        let poofStyle = {
+            top: emilyRect.top + .35 * screenHeight,
+            left: emilyRect.left - .05 * screenWidth,
+        }
+
+        const poofImg = (
+            <img src="./sparkles/poof.png"
+                alt="a pixelated gust of wind"
+                style={poofStyle}
+                className='poof'
+                ></img> 
+        )
+
+        setPoof(poofImg);
+    }
+ 
     return (
         <div className='title'>
             {/* <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> */}
@@ -38,7 +143,7 @@ const TitlePage = (() => {
 
             {/* </div> */}
 
-            <h1>
+            <h1 id='emily'>
                 <span className='cursive header1-cursive'>E</span><span className='pixel header1-pixel'>MILY YU</span>
             </h1>
 
@@ -55,29 +160,13 @@ const TitlePage = (() => {
 
                 </div>
 
-                {/* <div>
-                </div> */}
-
-            {/* </div> */}
-
-            <img src="./sparkles/2 stars.png" 
-                alt="two pixelated 'x' shaped stars, the larger one being a '+' sign and the smaller one being a 'x'"
-                className='two-star'></img>
-
-            <img src="./sparkles/+.png"
-                alt="a pixelated '+' shaped star"
-                className='plus'></img>
-
-            <img src="./sparkles/loopy.png"
-                alt="a pixelated loose spiral with three revolutions"
-                className='loopy'></img>
-
-            <img src="./sparkles/poof.png"
-                alt="a pixelated gust of wind"
-                className='poof'></img>
+            {twoStar}
+            {plus}
+            {loopy}
+            {poof}
 
         </div>
     )
-});
+}
 
 export default TitlePage;

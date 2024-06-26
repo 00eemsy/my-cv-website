@@ -7,3 +7,4 @@
     - *overall status*: ⭐⭐/⭐⭐⭐
     - [ ] add pixel stars
     - [ ] time typewriter so when onScroll => start
+    - [ ] properly align footer

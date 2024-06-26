@@ -89,8 +89,8 @@
 .two-star {
     position: absolute;
     width: 15%;
-    top: 20vh;
-    left: 20vw;
+    /* top: 20vh; */
+    /* left: 20vw; */
 }
 
 .loopy {
