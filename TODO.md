@@ -1,12 +1,3 @@
-- **Title**
-    - *overall status*: ⭐⭐/⭐⭐⭐
-    - [ ] make pixel star animation smoother
-    - [ ] add "i create virtual universes (aka webpages). welcome to my world ᕦ(ò_óˇ)ᕤ" text bubble or smthng
-
-- **elevatorPitch**
-    - *overall status*: ⭐⭐/⭐⭐⭐
-    - [x] add pixel stars
-    - [x] time typewriter so when onScroll => start
-    - [x] properly align footer
-    - [X] wrap ur text boxes pls
-    - [x] edit about me blurb
+- [ ] (⭐⭐⭐) make **cursor release pixelated stars** instead ><!!
+- [ ] (⭐⭐⭐) figure out how to make typewriter thingy last... **enforce some onScrolls** ig
+    - [ ] (⭐) onScroll for `experience.jsx`'s typewriter effect

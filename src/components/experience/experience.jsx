@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "../../fonts.css";
 import "./experience.css";
-// import ReactSlider from "react-slider";
-import Slider from "./slider"
+import ReactSlider from "react-slider";
+import Typewriter from "typewriter-effect";
 
 const Experience = (() => {
 
@@ -40,9 +40,9 @@ const Experience = (() => {
 
     const [currIndex, setCurrIndex] = useState(0);
 
-    // const changeIndex = (index) => {
-    //     setCurrIndex(index)
-    // };
+    const changeIndex = (index) => {
+        setCurrIndex(index)
+    };
 
     return (
         <div className="experience">
@@ -51,12 +51,47 @@ const Experience = (() => {
             </h1>
 
             {/* {slide} */}
-            <Slider 
+            {/* <Slider 
                 onChange={(index) => {
                     setCurrIndex(index)
                 }}
                 currentIndex={currIndex}
-                />
+                /> */}
+
+        <ReactSlider
+            className="horizontal-slider"
+            thumbClassName="example-thumb"
+            trackClassName="example-track"
+
+            // step={10}
+
+            marks
+            markClassName="example-mark"
+            onChange={changeIndex}
+            min={0}
+            max={3}
+            defaultValue={0}
+            value={currIndex}
+            renderMark={(props) => {
+                if (props.key < currIndex) {
+                    props.className = "example-mark example-mark-completed";
+                } else {
+                    props.className = "example-mark example-mark-active";
+                }
+
+                return <span {...props}/>;
+            }}
+            >
+        </ReactSlider>
+        
+        <div className="pixel">
+            <Typewriter
+                    onInit={(typewriter) => {
+                        typewriter.typeString('tip: slide to view!');
+                        typewriter.start()
+                    }}>
+            </Typewriter>
+        </div>
 
         </div>
     )
