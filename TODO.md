@@ -5,6 +5,8 @@
 
 - **elevatorPitch**
     - *overall status*: ⭐⭐/⭐⭐⭐
-    - [ ] add pixel stars
-    - [ ] time typewriter so when onScroll => start
-    - [ ] properly align footer
+    - [x] add pixel stars
+    - [x] time typewriter so when onScroll => start
+    - [x] properly align footer
+    - [X] wrap ur text boxes pls
+    - [x] edit about me blurb

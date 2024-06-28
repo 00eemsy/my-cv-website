@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: flex-start;
 
-    height: 100vh;
-    width: 100vw;
+    height: 115vh;
+    /* width: 100vw; */
 
     margin-left: 10%;
     margin-right: 10%;
@@ -58,6 +58,10 @@
     margin-top: 0;
 }
 
+.elevatorPitch ul {
+    white-space: normal;
+}
+
 .inline {
     display: inline-flex;
     align-items: center;
@@ -66,7 +70,7 @@
 .inline img {
     padding-right: 3vw;
     box-sizing: border-box;
-    align-self: flex-start;
+    align-self: center;
     margin: 0;
 }
 
@@ -87,14 +91,52 @@
     overflow: nowrap;
 }
 
-.elevatorPitch footer {
-    /* position: absolute; */
-    justify-content: right;
-}
+/* .elevatorPitch footer {
+    position: absolute; 
+    justify-content: right; 
+} */
 
 .grid {
     display: grid;
     width: 90vw;
     grid-template-columns: 1fr 1fr;
-    align-items: flex-end;
+    justify-items: flex-end;
+}
+
+
+#EPloopy {
+
+    position: absolute;
+    width: 10%;
+
+    animation-name: EPloopyrotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: .5s;
+    animation-delay: 3ms;
+}
+
+#EPtwo-star {
+
+    position: absolute;
+    width: 7%;
+
+    animation-name: Trotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: .5s;
+    animation-delay: 3ms;
+
+}
+
+@keyframes EPloopyrotate {
+    0% {
+        transform: rotate(-95deg);
+    }
+    /* 50% {
+        transform: rotate(25deg);
+    } */
+    100% {
+        transform: rotate(-85deg);
+    }
 }

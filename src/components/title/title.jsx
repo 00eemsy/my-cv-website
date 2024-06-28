@@ -48,7 +48,7 @@ function TitlePage() {
             <img src="./sparkles/2 stars.png" 
                 alt="two pixelated 'x' shaped stars, the larger one being a '+' sign and the smaller one being a 'x'"
                 style={twoStarStyle}
-                className='two-star'
+                id='Ttwo-star'
                 ></img>
         );
 
@@ -58,15 +58,15 @@ function TitlePage() {
     function positionPlus(emilyRect) {
 
         let plusStyle = {
-            top: emilyRect.top + .5 * screenHeight,
-            left: emilyRect.left + .6 * screenWidth,
+            top: emilyRect.bottom + .05 * screenHeight,
+            left: emilyRect.right - .3 * screenWidth,
         }
 
         const plusImg = (
             <img src="./sparkles/+.png"
                 alt="a pixelated '+' shaped star"
                 style={plusStyle}
-                className='plus'
+                id='Tplus'
                 ></img>
         );
 
@@ -77,14 +77,14 @@ function TitlePage() {
 
         let loopyStyle = {
             top: emilyRect.top - .025 * screenHeight,
-            left: emilyRect.left + .6 * screenWidth,
+            left: emilyRect.right - .15 * screenWidth,
         }
 
         const loopyImg = (
             <img src="./sparkles/loopy.png"
                 alt="a pixelated loose spiral with three revolutions"
                 style={loopyStyle}
-                className='loopy'
+                id='Tloopy'
                 ></img>
         );
 
@@ -94,15 +94,15 @@ function TitlePage() {
     function positionPoof(emilyRect) {
 
         let poofStyle = {
-            top: emilyRect.top + .35 * screenHeight,
-            left: emilyRect.left - .05 * screenWidth,
+            top: emilyRect.bottom - .05 * screenHeight,
+            left: emilyRect.left + .1 * screenWidth,
         }
 
         const poofImg = (
             <img src="./sparkles/poof.png"
                 alt="a pixelated gust of wind"
                 style={poofStyle}
-                className='poof'
+                id='Tpoof'
                 ></img> 
         )
 

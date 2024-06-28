@@ -4,8 +4,8 @@
     justify-items: center;
     flex-direction: column;
 
-    height: 100vh;
-    width: 100vw;
+    height: 110vh;
+    /* width: 100vw; */
 
     /* border: 1px; */
 }
@@ -78,43 +78,43 @@
     margin: 5em;
 } */
 
-.two-star, .loopy, .poof, .plus {
-    animation-name: rotate;
+#Ttwo-star, #Tloopy, #Tpoof, #Tplus {
+    animation-name: Trotate;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-duration: .5s;
     animation-delay: 3ms;
 }
 
-.two-star {
+#Ttwo-star {
     position: absolute;
     width: 15%;
     /* top: 20vh; */
     /* left: 20vw; */
 }
 
-.loopy {
+#Tloopy {
     position: absolute;
     width: 10%;
     top: 27vh;
     left: 67vw;
 }
 
-.poof {
+#Tpoof {
     position: absolute;
     width: 12%;
     top: 55vh;
     left: 23vw;
 }
 
-.plus {
+#Tplus {
     position: absolute;
     width: 7%;
     top: 60vh;
     left: 65vw;
 }
 
-@keyframes rotate {
+@keyframes Trotate {
     0% {
         transform: rotate(-5deg);
     }
