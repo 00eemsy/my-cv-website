@@ -30,8 +30,8 @@
 .horizontal-slider {
     /* align-self: flex-start; */
     width: 100%;
-    max-width: 75vw;
-    height: 7.5%;
+    max-width: 80vw;
+    height: 20%;
 }
 
 .example-track {
@@ -88,4 +88,50 @@
 
 .experience p {
     float: left;
+}
+
+.box {
+    margin-left: 20%;
+    margin-right: 20%;
+
+    display: flex;
+
+    /* border: linear-gradient(.25turn, #b1e0ed, #e2e9ec, #b1e0ed);
+    border-width: 2px;
+    border-style: solid; */
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.experience h2 {
+    text-align: center;
+    background: linear-gradient(.25turn, #b1e0ed, #e2e9ec, #b1e0ed);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-radius: 999px;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    width: fit-content;
+
+    white-space: nowrap;
+
+    font-size: 2em;
+
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
