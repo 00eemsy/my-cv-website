@@ -1,9 +1,8 @@
-// import { useEffect, useState } from "react";
 import "../../fonts.css";
 import "./title.css";
 import Typewriter from "typewriter-effect";
 
-function TitlePage() {
+const TitlePage = (() => {
 
     return (
         <div className='title'>
@@ -43,6 +42,7 @@ function TitlePage() {
                     a.k.a.
                 </h3>
                 <h2>
+                    {/* 善宜, my chinese name/middle name!*/}
                     <span className='cursive header2-cursive'>S</span>    <span className='pixel header2-pixel'>HAN-YI</span>
                 </h2>
 
@@ -50,6 +50,6 @@ function TitlePage() {
 
         </div>
     )
-}
+})
 
 export default TitlePage;

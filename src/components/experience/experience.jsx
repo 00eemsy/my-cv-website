@@ -6,29 +6,28 @@ import Typewriter from "typewriter-effect";
 
 const Experience = (() => {
 
-    const [currIndex, setCurrIndex] = useState(0);
-    const [exp, setExp] = useState(0);
+    const [currIndex, setCurrIndex] = useState(0); // tracks which mark of slider we're at; starts at 0
+    const [exp, setExp] = useState(0); // loads text desc. per mark
 
-    const changeIndex = (index) => {
+    const changeIndex = (index) => { // when slider's index changes, updates state variable
         setCurrIndex(index)
     };
 
     useEffect(() => {
-        let observer = IntersectionObserver(entries => {
+        // defining a filler observer so calling observer.observe() outside of the if statement doesn't break the website 😭
+        let observer = IntersectionObserver(entries => { 
             console.log(`entries: ${entries}`);
         });
 
-        if (currIndex === 0) {
-
-            // console.log(`currIndex === 0`)
+        if (currIndex === 0) { // at start of slider!
 
             observer = IntersectionObserver(entries => {
                 entries.forEach(entry => {
 
-                    if (entry.isIntersecting) {
-                        observer.unobserve(entry.target);
+                    if (entry.isIntersecting) { // when a singular pixel of 𓏲 MY EXPERIENCE is on-screen...
+                        observer.unobserve(entry.target); // ... de-init observer ...
 
-                        const expText = (
+                        const expText = ( // ... define a typewriter element ...
                             <div className="pixel">
                                 <Typewriter
                                         onInit={(typewriter) => {
@@ -39,7 +38,7 @@ const Experience = (() => {
                             </div>
                         );
 
-                        setExp(expText);
+                        setExp(expText); // ... and update state so it appears on-screen!
 
                     }
                 })
@@ -48,13 +47,13 @@ const Experience = (() => {
     
         observer.observe(document.getElementById('myExperienceTitle'));
 
-    }, [currIndex])
+    }, [currIndex]) // runs when currIndex changes (when you slide on slider)
 
-    useEffect(() => {
+    useEffect(() => { // for the rest of the indices, which actually produce text descriptions
         let expText;
 
         if (currIndex === 1) {
-            expText = (
+            expText = ( // define text description for code coach... 
                 <div className="pixel box">
                     <div className="column">
                         <h2>2023: CODE COACH</h2>
@@ -70,7 +69,7 @@ const Experience = (() => {
                 </div>
             )
         } else if (currIndex === 2) {
-            expText = (
+            expText = ( // define text description for hackathon... 
                 <div className="pixel box">
                     <div className="column">
                         <h2>2024: REED HACKATHON</h2>
@@ -86,7 +85,7 @@ const Experience = (() => {
                 </div>
             )
         } else if (currIndex === 3) {
-            expText = (
+            expText = ( // define text description for sciquel webdev internship... 
                 <div className="pixel box">
                     <div className="column">
                         <h2>2024: WEB DEVELOPMENT INTERN</h2>
@@ -100,9 +99,9 @@ const Experience = (() => {
             )
         }
         
-        setExp(expText);
+        setExp(expText); // ... and updates state!
 
-    }, [currIndex])
+    }, [currIndex]) // again only runs when currIndex changes
 
     return (
         <div className="experience">
@@ -112,22 +111,20 @@ const Experience = (() => {
 
             <ReactSlider
                 className="horizontal-slider"
-                thumbClassName="example-thumb"
-                trackClassName="example-track"
+                thumbClassName="thumb"
+                trackClassName="track"
 
                 marks
-                markClassName="example-mark"
-                onChange={changeIndex}
+                markClassName="mark"
+                onChange={changeIndex} // updates index so text description can update
                 min={0}
-                max={3}
+                max={3} // creates 4 marks
                 defaultValue={0}
                 value={currIndex}
                 renderMark={(props) => {
                     if (props.key < currIndex) {
-                        props.className = "example-mark example-mark-completed";
-                    } else {
-                        props.className = "example-mark example-mark-active";
-                    }
+                        props.className = "mark mark-completed"; // if already past this mark, then apply additional css
+                    } 
 
                     return <span {...props}/>;
                 }}

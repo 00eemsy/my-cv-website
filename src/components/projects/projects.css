@@ -18,7 +18,6 @@
 }
 
 .projects h1 {
-    /* text-align: center; */
     background: linear-gradient(.25turn, #b1e0ed, #e2e9ec, #b1e0ed);
     background-size: auto 40%;
     background-repeat: no-repeat;
@@ -64,7 +63,9 @@
     margin-right: 5%;
 }
 
-.scroll-box {
+.scroll-box { 
+
+    /* creates box where you can scroll through readme (since they're bound to overflow bc i talk too much :D) */
     height: 65vh;
     overflow: scroll;
 
@@ -72,13 +73,14 @@
     border-width: 2.5px;
     border-style: solid;
     border-image-slice: 1;
-    /* border-radius: 10%; */
 
     padding-left: 1vw;
     padding-right: 1vw;
 
     text-align: left;
 }
+
+/* ⬇️ stylizes the raw html from the readmes */
 
 .projects code {
     background-color: #ddd;
@@ -131,5 +133,6 @@
 }
 
 .projects img[src="./visuals/help.png"], projects img[src="./visuals/"] {
+    /* since they're long images and not the full-screen screenshots my visuals typically are */
     width: unset;
 }

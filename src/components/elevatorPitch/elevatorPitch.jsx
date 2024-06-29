@@ -13,8 +13,8 @@ const ElevatorPitch = (() => {
         const observer = IntersectionObserver(entries => {
             entries.forEach(entry => {
 
-                if (entry.isIntersecting) {
-                    const typewriter = (
+                if (entry.isIntersecting) { // when a singular pixel of *ੈ₊˚ELEVATOR PITCH is on-screen...
+                    const typewriter = ( // ... define a typewriter element ...
                         <Typewriter
                             onInit={(typewriter) => {
                                 // typewriter.deleteAll();
@@ -24,9 +24,9 @@ const ElevatorPitch = (() => {
                         </Typewriter>
                     );
 
-                    setTypewriter(typewriter);
+                    setTypewriter(typewriter); // ... and update state so it appears on-screen!
 
-                    observer.unobserve(entry.target);
+                    observer.unobserve(entry.target); // also de-init observer 
 
                     }
                 })
@@ -121,9 +121,7 @@ const ElevatorPitch = (() => {
                         icon by <a href="https://icons8.com">Icons8</a>
                     </footer>
                 </div>
-            
-            {/* {loopy}
-            {twoStar} */}
+
         </div>
     )
 });

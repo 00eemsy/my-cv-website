@@ -4,11 +4,11 @@ import Showdown from "showdown";
 
 const Projects = (() => {
 
-    const [buttonPressed, setButtonPressed] = useState(null);
-    const [readMe, setReadMe] = useState(null);
-    const [link, setLink] = useState(null);
+    const [buttonPressed, setButtonPressed] = useState(null); // to track what project we're looking at
+    const [readMe, setReadMe] = useState(null); // to track what readme to load
+    const [link, setLink] = useState(null); // to track what hyperlink to load
 
-    useEffect(() => {
+    useEffect(() => { // onLoad set readme to skribblio's
         setButtonPressed("skribblio");
         setLink("https://github.com/ycheuk/skribblio");
     }, [])
@@ -17,19 +17,17 @@ const Projects = (() => {
 
         let currReadMe;
 
-        // console.log(`buttonPressed val: ${buttonPressed}`)
-
         if (buttonPressed === "skribblio") {
-            fetch("./readMes/skribblio.md")
-                .then(skribblio => skribblio.text())
+            fetch("./readMes/skribblio.md") // fetches skribblio project's readme from public folder...
+                .then(skribblio => skribblio.text()) // ... md file ➡️ md text/raw md ... 
                 .then(md => {
-                    const converter = new Showdown.Converter();
+                    const converter = new Showdown.Converter(); // ... uses Showdown to convert raw md ➡️ raw html ... 
                     currReadMe =  converter.makeHtml(md);
-                    setReadMe(currReadMe);
+                    setReadMe(currReadMe); // ... and then updates the state variable with the raw html!
                     
                     setLink("https://github.com/ycheuk/skribblio");
                 })
-                .catch(error => {
+                .catch(error => { // just in case
                     console.error(`error fetching readme: ${error}`);
                 })
         } else if (buttonPressed === "feud") {
@@ -73,7 +71,7 @@ const Projects = (() => {
                 })
         }
 
-    }, [buttonPressed]);
+    }, [buttonPressed]); // only runs when the button is clicked
 
     return (
         <div className="projects">
@@ -81,8 +79,9 @@ const Projects = (() => {
                 <span className="pixel">*ੈ₊˚</span><span className="cursive">P</span> <span className="pixel"> ROJECTS</span>
             </h1>
 
-            <div className="flexy">
+            <div className="flexy"> 
                 <div className="buttons">
+                        {/* when clicked, updates state variable to the appropriate value */}
                         <h2 onClick={() =>
                             setButtonPressed("skribblio")}>⌕ <u className="pixel">SKRIBBL.IO</u></h2>
                         <h2 onClick={() => 
@@ -93,11 +92,12 @@ const Projects = (() => {
                             setButtonPressed("stats")}>⌕ <u className="pixel">STATS & CHATS</u></h2>
                 </div>
 
-                {/* {readMe} */}
                 <div className="column">
                     <a href={link}
                         className="pixel">🔗 link to this project's github repository!</a>
                     <br></br>
+
+                    {/* parses the raw html and applies css stylization */}
                     <div dangerouslySetInnerHTML={{__html: readMe}}
                         className="pixel scroll-box"></div>
                 </div>
