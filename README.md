@@ -25,8 +25,10 @@ Or
       * ... and more!
     * ... and more!
 2. Using your preferred console, type the following:
-```npm run start```
-3. If not already automatically prompted, open the following link on your preferred browser: [https://localhost:3000](https://localhost:3000)
+```
+npm run start
+```
+4. If not already automatically prompted, open the following link on your preferred browser: [https://localhost:3000](https://localhost:3000)
 
 ## 🎮 DEMOS
 
