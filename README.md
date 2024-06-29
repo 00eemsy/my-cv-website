@@ -14,7 +14,7 @@ Enjoy!
 
 Or
 
-1. From [00eemsy/m-cv-website](https://github.com/00eemsy/my-cv-website), download all of the files with the `<> CODE` button. These files include:
+1. From [00eemsy/my-cv-website](https://github.com/00eemsy/my-cv-website), download all of the files with the `<> CODE` button. These files include:
    * the `node_modules` folder, which includes npm packages necessary for this website to run
    * the `public` folder, which includes:
       * the `readMes` folder, which is embedded in the `projects.jsx` section of this website
