@@ -10,7 +10,7 @@ Enjoy!
 <br>
 
 ## 📦 INSTALLING AND RUNNING
-1. Open via GitHub pages link
+1. Open via [GitHub pages link](https://00eemsy.github.io/my-cv-website/)
 
 Or
 
