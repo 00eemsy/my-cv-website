@@ -1,86 +1,43 @@
 import "../../fonts.css";
 import "./elevatorPitch.css";
 import Typewriter from "typewriter-effect";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+// import { type } from "@testing-library/user-event/dist/type";
 
 const ElevatorPitch = (() => {
-
-    // const [loopy, setLoopy] = useState(null);
-    // const [twoStar, setTwoStar] = useState(null);
     
     const [typey, setTypewriter] = useState(null);
 
-    // const screenWidth = window.innerWidth;
-    // const screenHeight = window.innerHeight;
 
-    // document.addEventListener(onloadstart, (() => {
-    //     const elevatorPitchRect = getRect();
+    useEffect(() => {
+        const observer = IntersectionObserver(entries => {
+            entries.forEach(entry => {
 
-    //     positionTwoStar(elevatorPitchRect);
-    //     positionLoopy(elevatorPitchRect);
-    // }))
+                if (entry.isIntersecting) {
+                    const typewriter = (
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                // typewriter.deleteAll();
+                                typewriter.typeString('... plus node.js, express.js, socket.io, mips assembly, and more!');
+                                typewriter.start();
+                            }}>
+                        </Typewriter>
+                    );
 
+                    setTypewriter(typewriter);
 
-    // function getRect() {
-    //     const elevatorPitch = document.getElementById('elevatorPitch');
-    //     const elevatorPitchRect = elevatorPitch.getBoundingClientRect(); 
+                    observer.unobserve(entry.target);
 
-    //     return elevatorPitchRect;
-    // }
+                    }
+                })
+            });
 
-    // function positionLoopy(elevatorPitchRect) {
+        observer.observe(document.getElementById('elevatorPitchTitle'));
 
-    //     let loopyStyle = {
-    //         top: elevatorPitchRect.top - .025 * screenHeight,
-    //         left: elevatorPitchRect.left - .075 * screenWidth,
-    //     }
-
-    //     const loopyImg = (
-    //         <img src="./sparkles/loopy.png"
-    //             alt="a pixelated loose spiral with three revolutions"
-    //             style={loopyStyle}
-    //             id="EPloopy"
-    //             ></img>
-    //     );
-
-    //     setLoopy(loopyImg);
-    // }
-
-    // function positionTwoStar(elevatorPitchRect) {
-
-    //     let twoStarStyle = {
-    //         top: elevatorPitchRect.bottom - .05 * screenHeight,
-    //         left: elevatorPitchRect.right - .2 * screenWidth,
-    //     }
-
-    //     const twoStarImg = (
-    //         <img src="./sparkles/2 stars.png" 
-    //             alt="two pixelated 'x' shaped stars, the larger one being a '+' sign and the smaller one being a 'x'"
-    //             style={twoStarStyle}
-    //             id='EPtwo-star'
-    //             ></img>
-    //     );
-
-    //     setTwoStar(twoStarImg);
-
-    // }
-
-    document.addEventListener("scroll", (() => {
-        const typewriter = (
-            <Typewriter
-                onInit={(typewriter) => {
-                    typewriter.typeString('... plus node.js, express.js, socket.io, mips assembly, and more!');
-                    typewriter.start()
-                }}>
-            </Typewriter>
-        );
-
-        setTypewriter(typewriter);
-
-    }));
+        });
 
     return (
-        <div className="elevatorPitch">
+        <div className="elevatorPitch" id="elevatorPitchTitle">
             <h1 id="elevatorPitch">
                 <span className="cursive">E</span> <span className="pixel">LEVATOR PITCH</span>
             </h1>

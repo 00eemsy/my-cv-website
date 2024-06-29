@@ -14,20 +14,46 @@ const Experience = (() => {
     };
 
     useEffect(() => {
-        let expText;
-        if (currIndex === 0) {
-            expText = (
-                <div className="pixel">
-                    <Typewriter
-                            onInit={(typewriter) => {
-                                typewriter.typeString('tip: slide to view!');
-                                typewriter.start()
-                            }}>
-                    </Typewriter>
-                </div>
-            )
+        let observer = IntersectionObserver(entries => {
+            console.log(`entries: ${entries}`);
+        });
 
-        } else if (currIndex === 1) {
+        if (currIndex === 0) {
+
+            // console.log(`currIndex === 0`)
+
+            observer = IntersectionObserver(entries => {
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+                        observer.unobserve(entry.target);
+
+                        const expText = (
+                            <div className="pixel">
+                                <Typewriter
+                                        onInit={(typewriter) => {
+                                            typewriter.typeString('tip: slide to view!');
+                                            typewriter.start()
+                                        }}>
+                                </Typewriter>
+                            </div>
+                        );
+
+                        setExp(expText);
+
+                    }
+                })
+            });
+        }
+    
+        observer.observe(document.getElementById('myExperienceTitle'));
+
+    }, [currIndex])
+
+    useEffect(() => {
+        let expText;
+
+        if (currIndex === 1) {
             expText = (
                 <div className="pixel box">
                     <div className="column">
@@ -73,14 +99,14 @@ const Experience = (() => {
                 </div>
             )
         }
-
+        
         setExp(expText);
 
     }, [currIndex])
 
     return (
         <div className="experience">
-            <h1>
+            <h1 id="myExperienceTitle">
                 <span className="cursive">M</span><span className="pixel">Y EXPERIENCE</span>
             </h1>
 
