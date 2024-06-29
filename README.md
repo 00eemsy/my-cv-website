@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+## 👩🏻‍💻 DESCRIPTION
+Welcome to `my-cv-website 🧊`, a.k.a. my personal website/digital portfolio! This was initially created in 2024 in order to independently expand upon the React.js skills I was learning in my Web Development internship at SciQuel (which I previously had no experience in) & generally grow my understanding of WebDev concepts (such as responsive design, UI/UX, etcetera.). 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I created my website primarily with React.js, HTML, and CSS. I also employ various JavaScript libraries/APIs, such as [**TypewriterJS**](https://github.com/tameemsafi/typewriterjs#readme), [**ReactSlider**](https://zillow.github.io/react-slider/) (with heavy inspiration from this [**tutorial**](https://blog.logrocket.com/react-slider-tutorial/)), [**ShowdownJS**](https://github.com/showdownjs/showdown), and Intersection Observer.
 
-## Available Scripts
+Enjoy!
 
-In the project directory, you can run:
+⬇️ Opening still of `my-cv-website`
+![](./visuals/opening-screenshot.png)
+<br>
 
-### `npm start`
+## 📦 INSTALLING AND RUNNING
+1. Open via GitHub pages link
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Or
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. From [00eemsy/m-cv-website](https://github.com/00eemsy/my-cv-website), download all of the files with the `<> CODE` button. These files include:
+   * the `node_modules` folder, which includes npm packages necessary for this website to run
+   * the `public` folder, which includes:
+      * the `readMes` folder, which is embedded in the `projects.jsx` section of this website
+      * the `visuals` folder, which supplements the READMEs with images/gifs
+      * ... and more!
+    * the `src` folder, which includes:
+      * the `components` folder, which are the different sections of the website
+      * ... and more!
+    * ... and more!
+2. Using your preferred console, type the following:
+```npm run start```
+3. If not already automatically prompted, open the following link on your preferred browser: [https://localhost:3000](https://localhost:3000)
 
-### `npm test`
+## 🎮 DEMOS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_Typewriter loads on scroll_
+![](./visuals/onscroll.gif)
 
-### `npm run build`
+_Using the slider in `experience.jsx`_
+![](./visuals/slider-demo.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_Using the buttons in `projects.jsx`_
+![](./visuals/projects-demo.gif)
