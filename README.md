@@ -10,11 +10,11 @@ Enjoy!
 <br>
 
 ## 📦 INSTALLING AND RUNNING
-1. Open via [GitHub pages link](https://00eemsy.github.io/my-cv-website/)
+1. Open via [**GitHub pages link**](https://00eemsy.github.io/my-cv-website/)
 
 Or
 
-1. From [00eemsy/my-cv-website](https://github.com/00eemsy/my-cv-website), download all of the files with the `<> CODE` button. These files include:
+1. From [**00eemsy/my-cv-website**](https://github.com/00eemsy/my-cv-website), download all of the files with the `<> CODE` button. These files include:
    * the `node_modules` folder, which includes npm packages necessary for this website to run
    * the `public` folder, which includes:
       * the `readMes` folder, which is embedded in the `projects.jsx` section of this website
@@ -28,7 +28,7 @@ Or
 ```
 npm run start
 ```
-4. If not already automatically prompted, open the following link on your preferred browser: [https://localhost:3000](https://localhost:3000)
+4. If not already automatically prompted, open the following link on your preferred browser: [**https://localhost:3000**](https://localhost:3000)
 
 ## 🎮 DEMOS
 
