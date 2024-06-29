@@ -78,7 +78,7 @@
     margin-top: 1%;
 }
 
-#links img, a {
+.elevatorPitch #links img, .elevatorPitch a {
     padding-right: 2vw;
 }
 

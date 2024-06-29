@@ -6,38 +6,6 @@ import Typewriter from "typewriter-effect";
 
 const Experience = (() => {
 
-    // function renderSlider() {
-    //     const slider = (({currentIndex}) => {
-    //         (
-    //             <ReactSlider
-    //                 className="horizontal-slider"
-    //                 thumbClassName="example-thumb"
-    //                 trackClassName="example-track"
-    
-    //                 marks
-    //                 markClassName="example-mark"
-    //                 // onChange={onChange}
-    //                 min={0}
-    //                 man={4}
-    //                 defaultValue={0}
-    //                 value={currentIndex}
-    //                 renderMark={(props) => {
-    //                     if (props.key < currentIndex) {
-    //                         props.className = "example-mark example-mark-completed";
-    //                     } else {
-    //                         props.className = "example-mark example-mark-active";
-    //                     }
-    
-    //                     return <span {...props}/>;
-    //                 }}
-    //                 >
-    //             </ReactSlider>
-    //         )
-    //     });
-
-    //     setSlide(slider);
-    // }
-
     const [currIndex, setCurrIndex] = useState(0);
     const [exp, setExp] = useState(0);
 
@@ -47,7 +15,7 @@ const Experience = (() => {
 
     useEffect(() => {
         let expText;
-        if (currIndex == 0) {
+        if (currIndex === 0) {
             expText = (
                 <div className="pixel">
                     <Typewriter
@@ -59,7 +27,7 @@ const Experience = (() => {
                 </div>
             )
 
-        } else if (currIndex == 1) {
+        } else if (currIndex === 1) {
             expText = (
                 <div className="pixel box">
                     <div className="column">
@@ -75,7 +43,7 @@ const Experience = (() => {
                     </ul>
                 </div>
             )
-        } else if (currIndex == 2) {
+        } else if (currIndex === 2) {
             expText = (
                 <div className="pixel box">
                     <div className="column">
@@ -91,7 +59,7 @@ const Experience = (() => {
                     </ul>
                 </div>
             )
-        } else if (currIndex == 3) {
+        } else if (currIndex === 3) {
             expText = (
                 <div className="pixel box">
                     <div className="column">

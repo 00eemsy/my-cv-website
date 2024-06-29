@@ -1,7 +1,7 @@
 import "../../fonts.css";
 import "./elevatorPitch.css";
 import Typewriter from "typewriter-effect";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const ElevatorPitch = (() => {
 
@@ -12,14 +12,14 @@ const ElevatorPitch = (() => {
 
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
-    
-    useEffect(() => {
+
+    document.addEventListener(onloadstart, (() => {
         const elevatorPitchRect = getRect();
 
         positionTwoStar(elevatorPitchRect);
         positionLoopy(elevatorPitchRect);
+    }))
 
-    }, []);
 
     function getRect() {
         const elevatorPitch = document.getElementById('elevatorPitch');
@@ -130,19 +130,23 @@ const ElevatorPitch = (() => {
 
             <h2 className="pixel">MY LINKS</h2>
                 <div className="inline" id="links">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABRklEQVR4nO2YsUoDQRRFjwSCIAg2FmIl9oKWgn8g+AEaArr+gPgJ/kqEQLCQmCaV9SCCaCEIQRDsrAKCykhghGWYWRfUfc/NXLjN7t2Zw5vZ3eFB0hRqBmgDA8BU5AsgAxpl4LqAFXLPMUTVFoSzzq0iwIECwH4RoFEAaGoJ+OaWvwM8aQN8BzZzmTngShPgfSB3rAnwFVjxcueaAC3wDJwAR8BQ2x60FdvUDtAEcoe5+7423PVLYAdYdIeAJWAPuJEGXAMOCuZoAqeSgGU0C9xqBpxoVxJwNfe3eQC2ApkF4EMK0HhjvADzgdyjBOByZOm2A9lrCcD1CGD2g/n+5DtoPU+eSYBfShWMKe3BqXyLx4Feysgb0OR8FwEcBbLj3wCs2uZftz4yBYD7RYAN1wKTgjsr2yNsuVJX1cDsu8p9C5dUO30C+aNeFTppncIAAAAASUVORK5CYII="></img>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABRklEQVR4nO2YsUoDQRRFjwSCIAg2FmIl9oKWgn8g+AEaArr+gPgJ/kqEQLCQmCaV9SCCaCEIQRDsrAKCykhghGWYWRfUfc/NXLjN7t2Zw5vZ3eFB0hRqBmgDA8BU5AsgAxpl4LqAFXLPMUTVFoSzzq0iwIECwH4RoFEAaGoJ+OaWvwM8aQN8BzZzmTngShPgfSB3rAnwFVjxcueaAC3wDJwAR8BQ2x60FdvUDtAEcoe5+7423PVLYAdYdIeAJWAPuJEGXAMOCuZoAqeSgGU0C9xqBpxoVxJwNfe3eQC2ApkF4EMK0HhjvADzgdyjBOByZOm2A9lrCcD1CGD2g/n+5DtoPU+eSYBfShWMKe3BqXyLx4Feysgb0OR8FwEcBbLj3wCs2uZftz4yBYD7RYAN1wKTgjsr2yNsuVJX1cDsu8p9C5dUO30C+aNeFTppncIAAAAASUVORK5CYII="
+                        alt="linkedin logo"></img>
                     <a className="pixel" 
                         href='https://www.linkedin.com/in/emily-yu-761132260/'>my linkedin!</a>
 
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtklEQVR4nO2ZSWgVQRCGP2OCS3CJYoy7uCtiDi6o8aAIikvQi4oGvCiiRo2E6FXJQdxQg4LgUTx4cyPuHhVRD0bcsyDu4IJrTNTnSEMNPOfNm1czb2YSJD8UDNNT1fV3V1dX90AH/l8UAEuBfUAt8Bj4CLSKmOdH0ma+WQL0pp2gC1AGXAJ+A5ZPMToXgFViK3Z0AyqBVwGcTycvga1A17hILAAaQiTglHpgfpQEzNTXREjAKcdl5kNFf+BOjCQskVtAYVgkhst0W20kT8WHrNBP0qjVxtIAFAUl0bWNwsnyCLNAKfpoO3DecsjhICnWy+B2CbspwA7gWRbOmd1+G1As1cGBDN/P05LoptgnBruEoSH0A7gKVACzgNFAvsgYebcROAN8BTYDnR22ihWLXxVilYpRTLf75mlHy+PbAYr+zUB5oouy7Ah9o0pCkaL/F5lmpUwZ1+MiJFKi9GGll5FLSiPLIyRSrvThfDoDBT5K8eoIiRxT+vAL6OlmYKnSwGdZkFFhPPBT6Uupm4H9SmWT56PGSaUve92Ua5XK02Igskzpy1k35afKuMyNgchYJRFT0KbgvULRfBMHhiiJvHNTblUomm86xUBkoiMKPor8cfjT4qZsZ4rZUu+MAPoAA+XZljiIJCNXtoYC6dtUFYOSBjYFn6TxJnAXaJRQeiPPtqwgehz2iIrvScvAzFIKnkjjNUmxWyRPm4p1khw37VGJGjnS11BggmTKRVI575a7MPsIkIKL0rhLqsuDwCngOlAns/FBpnN1xLPRIqPdBDwAbgPngCNyFtrvVaZUKzOFkW8yU2FjncuC9pKdbkbm+jBgpBlYE1KomZJ8j08SRua4GeuuTMFOuSFryXnS0yBfBqMxQL8tXucie504xZxT1soGlM7wW+AEsEFGaiTQK8l2XznHmOvQKikvvgYgYImYkiotSj1SXomcwd8qw65KbihtFMq75iyct5JkYaa015RGsU7apwJfMpAwpNOhJAQy9eKLJyo8DJhcbpcQFyU07J84z4ErwOJMHQDrsyRSrr3duBckLn0gx6MPK4Pc9VOBzwQSLkYSIe4fGwKQSADT/XZ0JI2xT3KxNlgTpx4YFYBITZCO8qTu8tNRZ5/2/di+7PMC8B/09BnLfqG1+yCMP8DDgIdtSOS+nBhDQQ+pNOMmciWKf/F5UmInYiCSAA5FfdExWc4HURGpA2YQE3IlBTc4fvj7xeskfWNrU0zXTSnIkbLldFL54gelorswyz2pAx0gIvwFLXDNiM6zHVAAAAAASUVORK5CYII="></img>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtklEQVR4nO2ZSWgVQRCGP2OCS3CJYoy7uCtiDi6o8aAIikvQi4oGvCiiRo2E6FXJQdxQg4LgUTx4cyPuHhVRD0bcsyDu4IJrTNTnSEMNPOfNm1czb2YSJD8UDNNT1fV3V1dX90AH/l8UAEuBfUAt8Bj4CLSKmOdH0ma+WQL0pp2gC1AGXAJ+A5ZPMToXgFViK3Z0AyqBVwGcTycvga1A17hILAAaQiTglHpgfpQEzNTXREjAKcdl5kNFf+BOjCQskVtAYVgkhst0W20kT8WHrNBP0qjVxtIAFAUl0bWNwsnyCLNAKfpoO3DecsjhICnWy+B2CbspwA7gWRbOmd1+G1As1cGBDN/P05LoptgnBruEoSH0A7gKVACzgNFAvsgYebcROAN8BTYDnR22ihWLXxVilYpRTLf75mlHy+PbAYr+zUB5oouy7Ah9o0pCkaL/F5lmpUwZ1+MiJFKi9GGll5FLSiPLIyRSrvThfDoDBT5K8eoIiRxT+vAL6OlmYKnSwGdZkFFhPPBT6Uupm4H9SmWT56PGSaUve92Ua5XK02Igskzpy1k35afKuMyNgchYJRFT0KbgvULRfBMHhiiJvHNTblUomm86xUBkoiMKPor8cfjT4qZsZ4rZUu+MAPoAA+XZljiIJCNXtoYC6dtUFYOSBjYFn6TxJnAXaJRQeiPPtqwgehz2iIrvScvAzFIKnkjjNUmxWyRPm4p1khw37VGJGjnS11BggmTKRVI575a7MPsIkIKL0rhLqsuDwCngOlAns/FBpnN1xLPRIqPdBDwAbgPngCNyFtrvVaZUKzOFkW8yU2FjncuC9pKdbkbm+jBgpBlYE1KomZJ8j08SRua4GeuuTMFOuSFryXnS0yBfBqMxQL8tXucie504xZxT1soGlM7wW+AEsEFGaiTQK8l2XznHmOvQKikvvgYgYImYkiotSj1SXomcwd8qw65KbihtFMq75iyct5JkYaa015RGsU7apwJfMpAwpNOhJAQy9eKLJyo8DJhcbpcQFyU07J84z4ErwOJMHQDrsyRSrr3duBckLn0gx6MPK4Pc9VOBzwQSLkYSIe4fGwKQSADT/XZ0JI2xT3KxNlgTpx4YFYBITZCO8qTu8tNRZ5/2/di+7PMC8B/09BnLfqG1+yCMP8DDgIdtSOS+nBhDQQ+pNOMmciWKf/F5UmInYiCSAA5FfdExWc4HURGpA2YQE3IlBTc4fvj7xeskfWNrU0zXTSnIkbLldFL54gelorswyz2pAx0gIvwFLXDNiM6zHVAAAAAASUVORK5CYII="
+                        alt="github logo"></img>
                     <a className="pixel" 
                         href="https://github.com/00eemsy">my github!</a>
 
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIElEQVR4nO2WMW7CQBBF3wE4AC1FQkONFNsox6CjSklDQ50iLcdIlRvkAlwAKXdIT4eYKJKLaCS8BssaL/lP2m521l9//q5B5IUNbN1M9IebhDiiHTA54vg3jhyAGTACNsB3rkJeXP02VyFLV79O1BctziwjhKxc/Wuivmpx5iJCyJurf891tI7AQ137BJxzFWL1bfXLrmcR1peQE/ABjOvaR+Az4crgwr4Hphf2zIGvXMI+Sex7zmm0LGDdTPSHm4Q4oh0wOeKIdsDkiKPLC9325S4iX/ayQ88q0avSaDUQHW5T2B1370hxZZ+mAGd1ay2u6FUpIw1EZ8J0azmiHbCh3Vp/0b8WPThyN6NlEoIcMY0W8Zkwhd0R7YDJEUEsP1ALr2Y1TsHVAAAAAElFTkSuQmCC"></img>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIElEQVR4nO2WMW7CQBBF3wE4AC1FQkONFNsox6CjSklDQ50iLcdIlRvkAlwAKXdIT4eYKJKLaCS8BssaL/lP2m521l9//q5B5IUNbN1M9IebhDiiHTA54vg3jhyAGTACNsB3rkJeXP02VyFLV79O1BctziwjhKxc/Wuivmpx5iJCyJurf891tI7AQ137BJxzFWL1bfXLrmcR1peQE/ABjOvaR+Az4crgwr4Hphf2zIGvXMI+Sex7zmm0LGDdTPSHm4Q4oh0wOeKIdsDkiKPLC9325S4iX/ayQ88q0avSaDUQHW5T2B1370hxZZ+mAGd1ay2u6FUpIw1EZ8J0azmiHbCh3Vp/0b8WPThyN6NlEoIcMY0W8Zkwhd0R7YDJEUEsP1ALr2Y1TsHVAAAAAElFTkSuQmCC"
+                        alt="resume icon"></img>
                     <a className="pixel"
                         href='https://drive.google.com/file/d/1tp1O4tsp1pwoZW6Mb9x79cGnmGA6fAyZ/view?usp=sharing'>my (traditional) resume!</a>
 
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACT0lEQVR4nO3XTYiNcRTH8Y/ByMt4TcmgpLyVlFIWIoW8bERiY0PNQko2ZGeFhY1SFtRYjISyIGk0CyuaEknMwkaamDJ5r/Ey5tGjc+vO7d65z2VensU9dVb/c/7n23PO+f3vpW51q1tVa8m5S3LufuUAIqngKZvN+JQDmKTEv2JHYQ5XozsHUEl4dzD9tVZMxHw8yQHccyzCBFwsLEkHZmAa7o4hXEcZjorkow3XWqGTg4LeYk20/igGRgFsAKei5iq8KTkvuz07I2Ev+kYQ7gcORK0t+FwmpmxiPw5H4iZ8HAG4L9gWNQ7iZ4W4IS85jwasxOsRkJFx0d6hYqtedhOTMQ+PhwHuGRZgEtoyxGe69CHmYipu/wdcO6ZjFh5kzMl8+SssxXhc+Ae4yyFhi9FVQ15NRTpjJlM7nlGGBiJW5HbWWDNz4H3MQSPWRcF9VWSoL2JETmPc0T6cgOkXOBOtbY55TGXoSBRej94yeb1xJmL7I7c57jqdsQNVtWp3FNmAdyXn56JtC3EV78PbYlMbIqY4pwcb485dFcQ5E2A6yMuLnr1KQnov3s9Sa46zSj9Ej0XcMryoFfAWmjAlvky1NvThOk6G38D3DHnXQrqaQm+rAvaHsqetWRKimoywd2FF0R+40k4NGuqtEbgdH0YBLima9T1Fs95TCvg0BDR9G0/g9yjCJeHpRp+NDU8X7FEB8Eq8tTNxZwzAkhJPF2t2vNWXChuXbuvLHMAl4emP1rUFuP34lgOopIwyHKr1LR4Ll3vAlpx73epWN0PYHxjh9nN0fGBeAAAAAElFTkSuQmCC"></img>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACT0lEQVR4nO3XTYiNcRTH8Y/ByMt4TcmgpLyVlFIWIoW8bERiY0PNQko2ZGeFhY1SFtRYjISyIGk0CyuaEknMwkaamDJ5r/Ey5tGjc+vO7d65z2VensU9dVb/c/7n23PO+f3vpW51q1tVa8m5S3LufuUAIqngKZvN+JQDmKTEv2JHYQ5XozsHUEl4dzD9tVZMxHw8yQHccyzCBFwsLEkHZmAa7o4hXEcZjorkow3XWqGTg4LeYk20/igGRgFsAKei5iq8KTkvuz07I2Ev+kYQ7gcORK0t+FwmpmxiPw5H4iZ8HAG4L9gWNQ7iZ4W4IS85jwasxOsRkJFx0d6hYqtedhOTMQ+PhwHuGRZgEtoyxGe69CHmYipu/wdcO6ZjFh5kzMl8+SssxXhc+Ae4yyFhi9FVQ15NRTpjJlM7nlGGBiJW5HbWWDNz4H3MQSPWRcF9VWSoL2JETmPc0T6cgOkXOBOtbY55TGXoSBRej94yeb1xJmL7I7c57jqdsQNVtWp3FNmAdyXn56JtC3EV78PbYlMbIqY4pwcb485dFcQ5E2A6yMuLnr1KQnov3s9Sa46zSj9Ej0XcMryoFfAWmjAlvky1NvThOk6G38D3DHnXQrqaQm+rAvaHsqetWRKimoywd2FF0R+40k4NGuqtEbgdH0YBLima9T1Fs95TCvg0BDR9G0/g9yjCJeHpRp+NDU8X7FEB8Eq8tTNxZwzAkhJPF2t2vNWXChuXbuvLHMAl4emP1rUFuP34lgOopIwyHKr1LR4Ll3vAlpx73epWN0PYHxjh9nN0fGBeAAAAAElFTkSuQmCC"
+                        alt="email icon"></img>
                     <a className="pixel"
                         href='mailto:eyu19415@gmail.com'>
                             my email!
