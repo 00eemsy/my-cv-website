@@ -5,109 +5,109 @@ import Typewriter from "typewriter-effect";
 
 function TitlePage() {
 
-    const [twoStar, setTwoStar] = useState(null);
-    const [plus, setPlus] = useState(null);
-    const [loopy, setLoopy] = useState(null);
-    const [poof, setPoof] = useState(null);
+    // const [twoStar, setTwoStar] = useState(null);
+    // const [plus, setPlus] = useState(null);
+    // const [loopy, setLoopy] = useState(null);
+    // const [poof, setPoof] = useState(null);
 
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
+    // const screenWidth = window.innerWidth;
+    // const screenHeight = window.innerHeight;
     
-    useEffect(() => {
-        const emilyRect = getRect();
+    // useEffect(() => {
+    //     const emilyRect = getRect();
 
-        positionTwoStar(emilyRect);
-        positionPlus(emilyRect);
-        positionLoopy(emilyRect);
-        positionPoof(emilyRect);
+    //     positionTwoStar(emilyRect);
+    //     positionPlus(emilyRect);
+    //     positionLoopy(emilyRect);
+    //     positionPoof(emilyRect);
 
-    }, []);
+    // }, []);
 
-    function getRect() {
-        const emily = document.getElementById('emily');
-        const emilyRect = emily.getBoundingClientRect(); 
+    // function getRect() {
+    //     const emily = document.getElementById('emily');
+    //     const emilyRect = emily.getBoundingClientRect(); 
 
-        return emilyRect;
-    }
-
-    // function getLowerRect() {
-    //     const lower = document.getElementById('bottom-subtext');
-    //     const lowerRect = lower.getBoundingClientRect();
-
-    //     return lowerRect;
+    //     return emilyRect;
     // }
 
-    function positionTwoStar(emilyRect) {
+    // // function getLowerRect() {
+    // //     const lower = document.getElementById('bottom-subtext');
+    // //     const lowerRect = lower.getBoundingClientRect();
 
-        let twoStarStyle = {
-            top: emilyRect.top - .1 * screenHeight,
-            left: emilyRect.left + .05 * screenWidth,
-        }
+    // //     return lowerRect;
+    // // }
 
-        const twoStarImg = (
-            <img src="./sparkles/2 stars.png" 
-                alt="two pixelated 'x' shaped stars, the larger one being a '+' sign and the smaller one being a 'x'"
-                style={twoStarStyle}
-                id='Ttwo-star'
-                ></img>
-        );
+    // function positionTwoStar(emilyRect) {
 
-        setTwoStar(twoStarImg);
-    }
+    //     let twoStarStyle = {
+    //         top: emilyRect.top - .1 * screenHeight,
+    //         left: emilyRect.left + .05 * screenWidth,
+    //     }
 
-    function positionPlus(emilyRect) {
+    //     const twoStarImg = (
+    //         <img src="./sparkles/2 stars.png" 
+    //             alt="two pixelated 'x' shaped stars, the larger one being a '+' sign and the smaller one being a 'x'"
+    //             style={twoStarStyle}
+    //             id='Ttwo-star'
+    //             ></img>
+    //     );
 
-        let plusStyle = {
-            top: emilyRect.bottom + .05 * screenHeight,
-            left: emilyRect.right - .3 * screenWidth,
-        }
+    //     setTwoStar(twoStarImg);
+    // }
 
-        const plusImg = (
-            <img src="./sparkles/+.png"
-                alt="a pixelated '+' shaped star"
-                style={plusStyle}
-                id='Tplus'
-                ></img>
-        );
+    // function positionPlus(emilyRect) {
 
-        setPlus(plusImg);
-    }
+    //     let plusStyle = {
+    //         top: emilyRect.bottom + .05 * screenHeight,
+    //         left: emilyRect.right - .3 * screenWidth,
+    //     }
 
-    function positionLoopy(emilyRect) {
+    //     const plusImg = (
+    //         <img src="./sparkles/+.png"
+    //             alt="a pixelated '+' shaped star"
+    //             style={plusStyle}
+    //             id='Tplus'
+    //             ></img>
+    //     );
 
-        let loopyStyle = {
-            top: emilyRect.top - .025 * screenHeight,
-            left: emilyRect.right - .15 * screenWidth,
-        }
+    //     setPlus(plusImg);
+    // }
 
-        const loopyImg = (
-            <img src="./sparkles/loopy.png"
-                alt="a pixelated loose spiral with three revolutions"
-                style={loopyStyle}
-                id='Tloopy'
-                ></img>
-        );
+    // function positionLoopy(emilyRect) {
 
-        setLoopy(loopyImg);
-    }
+    //     let loopyStyle = {
+    //         top: emilyRect.top - .025 * screenHeight,
+    //         left: emilyRect.right - .15 * screenWidth,
+    //     }
 
-    function positionPoof(emilyRect) {
+    //     const loopyImg = (
+    //         <img src="./sparkles/loopy.png"
+    //             alt="a pixelated loose spiral with three revolutions"
+    //             style={loopyStyle}
+    //             id='Tloopy'
+    //             ></img>
+    //     );
 
-        let poofStyle = {
-            top: emilyRect.bottom - .05 * screenHeight,
-            left: emilyRect.left + .1 * screenWidth,
-        }
+    //     setLoopy(loopyImg);
+    // }
 
-        const poofImg = (
-            <img src="./sparkles/poof.png"
-                alt="a pixelated gust of wind"
-                style={poofStyle}
-                id='Tpoof'
-                ></img> 
-        )
+    // function positionPoof(emilyRect) {
 
-        setPoof(poofImg);
-    }
+    //     let poofStyle = {
+    //         top: emilyRect.bottom - .05 * screenHeight,
+    //         left: emilyRect.left + .1 * screenWidth,
+    //     }
+
+    //     const poofImg = (
+    //         <img src="./sparkles/poof.png"
+    //             alt="a pixelated gust of wind"
+    //             style={poofStyle}
+    //             id='Tpoof'
+    //             ></img> 
+    //     )
+
+    //     setPoof(poofImg);
+    // }
  
     return (
         <div className='title'>
@@ -160,10 +160,10 @@ function TitlePage() {
 
                 </div>
 
-            {twoStar}
+            {/* {twoStar}
             {plus}
             {loopy}
-            {poof}
+            {poof} */}
 
         </div>
     )

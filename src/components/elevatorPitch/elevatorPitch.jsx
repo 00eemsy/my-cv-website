@@ -5,67 +5,67 @@ import { useState } from "react";
 
 const ElevatorPitch = (() => {
 
-    const [loopy, setLoopy] = useState(null);
-    const [twoStar, setTwoStar] = useState(null);
+    // const [loopy, setLoopy] = useState(null);
+    // const [twoStar, setTwoStar] = useState(null);
     
     const [typey, setTypewriter] = useState(null);
 
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
+    // const screenWidth = window.innerWidth;
+    // const screenHeight = window.innerHeight;
 
-    document.addEventListener(onloadstart, (() => {
-        const elevatorPitchRect = getRect();
+    // document.addEventListener(onloadstart, (() => {
+    //     const elevatorPitchRect = getRect();
 
-        positionTwoStar(elevatorPitchRect);
-        positionLoopy(elevatorPitchRect);
-    }))
+    //     positionTwoStar(elevatorPitchRect);
+    //     positionLoopy(elevatorPitchRect);
+    // }))
 
 
-    function getRect() {
-        const elevatorPitch = document.getElementById('elevatorPitch');
-        const elevatorPitchRect = elevatorPitch.getBoundingClientRect(); 
+    // function getRect() {
+    //     const elevatorPitch = document.getElementById('elevatorPitch');
+    //     const elevatorPitchRect = elevatorPitch.getBoundingClientRect(); 
 
-        return elevatorPitchRect;
-    }
+    //     return elevatorPitchRect;
+    // }
 
-    function positionLoopy(elevatorPitchRect) {
+    // function positionLoopy(elevatorPitchRect) {
 
-        let loopyStyle = {
-            top: elevatorPitchRect.top - .025 * screenHeight,
-            left: elevatorPitchRect.left - .075 * screenWidth,
-        }
+    //     let loopyStyle = {
+    //         top: elevatorPitchRect.top - .025 * screenHeight,
+    //         left: elevatorPitchRect.left - .075 * screenWidth,
+    //     }
 
-        const loopyImg = (
-            <img src="./sparkles/loopy.png"
-                alt="a pixelated loose spiral with three revolutions"
-                style={loopyStyle}
-                id="EPloopy"
-                ></img>
-        );
+    //     const loopyImg = (
+    //         <img src="./sparkles/loopy.png"
+    //             alt="a pixelated loose spiral with three revolutions"
+    //             style={loopyStyle}
+    //             id="EPloopy"
+    //             ></img>
+    //     );
 
-        setLoopy(loopyImg);
-    }
+    //     setLoopy(loopyImg);
+    // }
 
-    function positionTwoStar(elevatorPitchRect) {
+    // function positionTwoStar(elevatorPitchRect) {
 
-        let twoStarStyle = {
-            top: elevatorPitchRect.bottom - .05 * screenHeight,
-            left: elevatorPitchRect.right - .2 * screenWidth,
-        }
+    //     let twoStarStyle = {
+    //         top: elevatorPitchRect.bottom - .05 * screenHeight,
+    //         left: elevatorPitchRect.right - .2 * screenWidth,
+    //     }
 
-        const twoStarImg = (
-            <img src="./sparkles/2 stars.png" 
-                alt="two pixelated 'x' shaped stars, the larger one being a '+' sign and the smaller one being a 'x'"
-                style={twoStarStyle}
-                id='EPtwo-star'
-                ></img>
-        );
+    //     const twoStarImg = (
+    //         <img src="./sparkles/2 stars.png" 
+    //             alt="two pixelated 'x' shaped stars, the larger one being a '+' sign and the smaller one being a 'x'"
+    //             style={twoStarStyle}
+    //             id='EPtwo-star'
+    //             ></img>
+    //     );
 
-        setTwoStar(twoStarImg);
+    //     setTwoStar(twoStarImg);
 
-    }
+    // }
 
-    document.addEventListener('scroll', (() => {
+    document.addEventListener("scroll", (() => {
         const typewriter = (
             <Typewriter
                 onInit={(typewriter) => {
@@ -77,7 +77,7 @@ const ElevatorPitch = (() => {
 
         setTypewriter(typewriter);
 
-    }))
+    }));
 
     return (
         <div className="elevatorPitch">
@@ -165,8 +165,8 @@ const ElevatorPitch = (() => {
                     </footer>
                 </div>
             
-            {loopy}
-            {twoStar}
+            {/* {loopy}
+            {twoStar} */}
         </div>
     )
 });

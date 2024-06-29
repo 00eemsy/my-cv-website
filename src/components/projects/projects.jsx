@@ -6,9 +6,11 @@ const Projects = (() => {
 
     const [buttonPressed, setButtonPressed] = useState(null);
     const [readMe, setReadMe] = useState(null);
+    const [link, setLink] = useState(null);
 
     useEffect(() => {
         setButtonPressed("skribblio");
+        setLink("https://github.com/ycheuk/skribblio");
     }, [])
 
     useEffect(() => {
@@ -24,7 +26,8 @@ const Projects = (() => {
                     const converter = new Showdown.Converter();
                     currReadMe =  converter.makeHtml(md);
                     setReadMe(currReadMe);
-                    // console.log(currReadMe);
+                    
+                    setLink("https://github.com/ycheuk/skribblio");
                 })
                 .catch(error => {
                     console.error(`error fetching readme: ${error}`);
@@ -36,7 +39,8 @@ const Projects = (() => {
                     const converter = new Showdown.Converter();
                     currReadMe =  converter.makeHtml(md);
                     setReadMe(currReadMe);
-                    // console.log(currReadMe);
+                    
+                    setLink("https://github.com/00eemsy/google-feud");
                 })
                 .catch(error => {
                     console.error(`error fetching readme: ${error}`);
@@ -48,7 +52,8 @@ const Projects = (() => {
                     const converter = new Showdown.Converter();
                     currReadMe =  converter.makeHtml(md);
                     setReadMe(currReadMe);
-                    // console.log(currReadMe);
+                    
+                    setLink("https://github.com/00eemsy/csci-121-projects/tree/main/adventure");
                 })
                 .catch(error => {
                     console.error(`error fetching readme: ${error}`);
@@ -60,7 +65,8 @@ const Projects = (() => {
                     const converter = new Showdown.Converter();
                     currReadMe =  converter.makeHtml(md);
                     setReadMe(currReadMe);
-                    // console.log(currReadMe);
+                    
+                    setLink("https://github.com/00eemsy/csci-121-projects/tree/main/stats%20and%20chats");
                 })
                 .catch(error => {
                     console.error(`error fetching readme: ${error}`);
@@ -88,8 +94,14 @@ const Projects = (() => {
                 </div>
 
                 {/* {readMe} */}
-                <div dangerouslySetInnerHTML={{__html: readMe}}
-                    className="pixel scroll-box"></div>
+                <div className="column">
+                    <a href={link}
+                        className="pixel">🔗 link to this project's github repository!</a>
+                    <br></br>
+                    <div dangerouslySetInnerHTML={{__html: readMe}}
+                        className="pixel scroll-box"></div>
+                </div>
+
             </div>
 
         </div>

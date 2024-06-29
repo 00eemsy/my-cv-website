@@ -63,7 +63,7 @@
 }
 
 .scroll-box {
-    height: 70vh;
+    height: 65vh;
     overflow: scroll;
 
     border-image-source: linear-gradient(.25turn, #b1e0ed, #e2e9ec, #b1e0ed);
@@ -74,6 +74,8 @@
 
     padding-left: 1vw;
     padding-right: 1vw;
+
+    text-align: left;
 }
 
 .projects code {
