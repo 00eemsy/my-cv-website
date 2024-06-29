@@ -62,6 +62,20 @@
     margin-right: 5%;
 }
 
+.scroll-box {
+    height: 70vh;
+    overflow: scroll;
+
+    border-image-source: linear-gradient(.25turn, #b1e0ed, #e2e9ec, #b1e0ed);
+    border-width: 2.5px;
+    border-style: solid;
+    border-image-slice: 1;
+    /* border-radius: 10%; */
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
 .projects code {
     background-color: #ddd;
     border-radius: 999px;
@@ -112,6 +126,6 @@
     width: 90%;
 }
 
-.projects img[src="./visuals/help.png"] {
+.projects img[src="./visuals/help.png"], projects img[src="./visuals/"] {
     width: unset;
 }

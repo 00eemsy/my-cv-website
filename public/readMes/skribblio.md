@@ -5,7 +5,7 @@ Welcome to `skribbl.io 🎨`, a digital rendition of the classic game of piction
 
 This game was created with HTML/CSS/JavaScript, with the help of runtime environments/frameworks/etc. such as [Node.js](https://nodejs.org/en), [Express.js](https://expressjs.com/), and [Socket.IO](https://socket.io/) for our backend
 
-⬇️ opening still of `skribbl.io`
+⬇️ Opening still of `skribbl.io`
 ![](./visuals/opening.png)
 
 ## 💡 INSTRUCTIONS 
@@ -40,15 +40,15 @@ node app.js
 4. Open the following link on your preferred browser: [https://localhost:3000](https://localhost:3000)
 
 ## 🎮 DEMOS 
-_using the chat_
+_Using the chat:_
 ![](./visuals/chat.gif)
 
-_a round of gameplay_
+_A round of gameplay:_
 ![](./visuals/round.gif)
 
-running out of time
+_Running out of time:_
 ![](./visuals/oops.gif)
 
-`score` feature
+_`score` feature:_
 ![](./visuals/score.gif)
   
