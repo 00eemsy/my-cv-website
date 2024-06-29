@@ -39,7 +39,7 @@ const ElevatorPitch = (() => {
     return (
         <div className="elevatorPitch" id="elevatorPitchTitle">
             <h1 id="elevatorPitch">
-                <span className="cursive">E</span> <span className="pixel">LEVATOR PITCH</span>
+                <span className="pixel">*ੈ₊˚</span><span className="cursive">E</span> <span className="pixel">LEVATOR PITCH</span>
             </h1>
 
             <h2 className="pixel" id="MAAG">ME AT A GLANCE</h2>

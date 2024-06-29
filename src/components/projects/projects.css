@@ -28,6 +28,8 @@
 
     margin-top: 0;
     margin-bottom: 0;
+
+    text-wrap: nowrap;
 }
 
 .projects h2 {

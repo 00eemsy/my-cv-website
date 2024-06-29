@@ -107,7 +107,7 @@ const Experience = (() => {
     return (
         <div className="experience">
             <h1 id="myExperienceTitle">
-                <span className="cursive">M</span><span className="pixel">Y EXPERIENCE</span>
+                <span className='pixel header1-pixel'>𓏲 ๋ </span><span className="cursive">M</span><span className="pixel">Y EXPERIENCE ⋆₊˚</span>
             </h1>
 
             <ReactSlider

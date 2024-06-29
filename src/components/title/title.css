@@ -1,8 +1,9 @@
 .title {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     justify-items: center;
     flex-direction: column;
+    margin-top: 5%;
 
     height: 110vh;
     /* width: 100vw; */
@@ -23,6 +24,9 @@
     margin-right: 10%;
     margin-top: 0%;
     margin-bottom: 0%;
+
+    max-width: 80vw;
+    text-wrap: nowrap;
 }
 
 .title h2 {
@@ -74,54 +78,11 @@
     align-items: center;
 }
 
-/* .spacer {
-    margin: 5em;
-} */
+.title img {
+    width: 20%;
+    align-self: center;
 
-#Ttwo-star, #Tloopy, #Tpoof, #Tplus {
-    animation-name: Trotate;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: .5s;
-    animation-delay: 3ms;
-}
+    margin-top: -5%;
+    /* margin-bottom: 3; */
 
-#Ttwo-star {
-    position: absolute;
-    width: 15%;
-    /* top: 20vh; */
-    /* left: 20vw; */
-}
-
-#Tloopy {
-    position: absolute;
-    width: 10%;
-    top: 27vh;
-    left: 67vw;
-}
-
-#Tpoof {
-    position: absolute;
-    width: 12%;
-    top: 55vh;
-    left: 23vw;
-}
-
-#Tplus {
-    position: absolute;
-    width: 7%;
-    top: 60vh;
-    left: 65vw;
-}
-
-@keyframes Trotate {
-    0% {
-        transform: rotate(-5deg);
-    }
-    /* 50% {
-        transform: rotate(25deg);
-    } */
-    100% {
-        transform: rotate(5deg);
-    }
 }

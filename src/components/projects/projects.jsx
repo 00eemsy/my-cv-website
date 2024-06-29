@@ -78,7 +78,7 @@ const Projects = (() => {
     return (
         <div className="projects">
             <h1>
-                <span className="cursive">P</span> <span className="pixel"> ROJECTS</span>
+                <span className="pixel">*ੈ₊˚</span><span className="cursive">P</span> <span className="pixel"> ROJECTS</span>
             </h1>
 
             <div className="flexy">
