@@ -135,3 +135,7 @@
     align-items: center;
     text-align: center;
 }
+
+.experience strong {
+    color: #7ad3ec;
+}

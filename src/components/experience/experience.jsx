@@ -68,10 +68,10 @@ const Experience = (() => {
                     </div>
 
                     <ul>
-                        <li>led camps for 4-15 students, ages 6-13, using project-based learning, where students completed 3 instructor-assigned projects per day as well as a capstone project designed by the student.</li>
-                        <li>worked both independently and with a team of 2-4 instructors to build a quality learning environment. collaborated with instructors to individualize student help to match their skill set and learning style, as well as maximize their learning potential.</li>
-                        <li>developed new curriculums for each course and tailored them to students' interests, age ranges, skill level, etc. if students were not sufficiently challenged by a project, added interactive bonus problems such as recreating the code from a demonstration, extra tasks for lesson plans, etc.</li>
-                        <li>worked side-by-side with students on capstone projects to not only guide them through the brainstorming, coding, and debugging processes, but to also teach them the skills to independently build their own projects.</li>
+                        <li>led camps for <strong>4-15 students, ages 6-13</strong>, using project-based learning, where students completed <strong>3 instructor-assigned projects per day</strong> as well as a capstone project designed by the student.</li>
+                        <li><strong>worked both independently and with a team of 2-4 instructors</strong> to build a quality learning environment. collaborated with instructors to individualize student help to match their skill set and learning style, as well as maximize their learning potential.</li>
+                        <li><strong>developed new curriculums</strong> for each course and tailored them to students' interests, age ranges, skill level, etc. <strong>added interactive bonus problems</strong> if students were not sufficiently challenged by a project, such as recreating the code from a demonstration, extra tasks for lesson plans, etc.</li>
+                        <li>worked side-by-side with students on <strong>capstone projects</strong> to not only <strong>guide them through the brainstorming, coding, and debugging processes</strong>, but to also teach them the skills to independently build their own projects.</li>
                     </ul>
                 </div>
             )
@@ -80,14 +80,14 @@ const Experience = (() => {
                 <div className="pixel box">
                     <div className="column">
                         <h2>2024: REED HACKATHON</h2>
-                        <p>📍 remote</p>
+                        <p>📍 Reed College, portland, or</p>
                     </div>
 
                     <ul>
-                        <li>self-studied languages such as html, css, javascript, etc.</li>
-                        <li>organized a personalized curriculum to further my understanding of front-end, back-end, server/client interactions.</li>
-                        <li>gained exposure to various javascript frameworks/technologies, such as node.js and socket.io.</li>
-                        <li>collaboratively produced a final cumulative web platform, skribbl.io</li>
+                        <li>self-studied languages such as <strong>html, css, javascript</strong>, etc.</li>
+                        <li>organized a personalized curriculum to further my understanding of <strong>front-end, back-end, server/client interactions</strong>, etc.</li>
+                        <li>gained exposure to various <strong>javascript frameworks/technologies</strong>, such as <strong>node.js and socket.io</strong>.</li>
+                        <li>collaboratively produced a <strong>final cumulative web application, skribbl.io</strong>.</li>
                     </ul>
                 </div>
             )
@@ -100,7 +100,7 @@ const Experience = (() => {
                     </div>
 
                     <ul>
-                        <li>spearheaded the development of a new editor dashboard drag-and-drop feature that utilizes react.js to interact with abstract syntax trees.</li>
+                        <li><strong>spearheaded the development of a new drag-and-drop feature</strong> that utilizes <strong>react.js</strong> to interact with <strong>abstract syntax trees</strong>.</li>
                     </ul>
                 </div>
             )
