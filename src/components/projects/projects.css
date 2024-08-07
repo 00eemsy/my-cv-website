@@ -73,6 +73,7 @@
     border-width: 2.5px;
     border-style: solid;
     border-image-slice: 1;
+    /* border-radius: 20%; */
 
     padding-left: 1vw;
     padding-right: 1vw;

@@ -52,8 +52,10 @@
 
     font-size: 2em;
 
-    margin-top: 1%;
+    margin-top: 0;
     margin-bottom: 0;
+
+    width: fit-content;
 }
 
 .elevatorPitch h2 #MAAG {
@@ -66,7 +68,7 @@
 
 .inline {
     display: inline-flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .inline img {
@@ -74,10 +76,6 @@
     box-sizing: border-box;
     align-self: center;
     margin: 0;
-}
-
-#links {
-    margin-top: 1%;
 }
 
 .elevatorPitch #links img, .elevatorPitch a {
@@ -88,7 +86,7 @@
     font-size: 1.2em;
 }
 
-.elevatorPitch a {
+.elevatorPitch a, strong {
     color: #7ad3ec;
     overflow: nowrap;
 }
@@ -103,4 +101,72 @@
     width: 90vw;
     grid-template-columns: 1fr 1fr;
     justify-items: flex-end;
+}
+
+.elevatorPitch #stack {
+    margin-bottom: 1em;
+}
+
+.elevatorPitch .flexy {
+    display: flex;
+}
+
+.elevatorPitch .flexyCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.elevatorPitch .box {
+    /* overflow: scroll; */
+
+    border-image-source: linear-gradient(.25turn, #b1e0ed, #e2e9ec, #b1e0ed);
+    border-width: 2.5px;
+    border-style: solid;
+    border-image-slice: 1;
+
+    margin-top: 2.5vh;
+    margin-bottom: 1vh;
+    padding-right: 1vw;
+
+    text-align: left;
+}
+
+.elevatorPitch .box-inline {
+    min-height: fit-content;
+    height: 45vh;
+}
+
+.elevatorPitch .small-box {
+    padding-left: 1vw;
+}
+
+.elevatorPitch .big-flexy {
+    width: 43vw;
+    /* margin-left: 2.5%;
+    margin-right: 2.5%; */
+}
+
+.elevatorPitch #big-flexy-1 {
+    margin-right: 2.5%;
+}
+
+.elevatorPitch #big-flexy-2 {
+    margin-right: 2.5%;
+}
+
+.elevatorPitch #links {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: inherit;
+
+    align-items: center;
+}
+
+.elevatorPitch .inline2 {
+    align-self: center;
+    margin-right: 2.5%;
+}
+
+.elevatorPitch #link-box {
+    align-self: center;
 }

@@ -57,14 +57,14 @@ const Experience = (() => {
                 <div className="pixel box">
                     <div className="column">
                         <h2>2023: CODE COACH</h2>
-                        <p>📍 theCodeSchoolSF - san francisco, ca</p>
+                        <p>📍 theCodeSchoolSF - San Francisco, CA</p>
                     </div>
 
                     <ul>
                         <li>led camps for <strong>4-15 students, ages 6-13</strong>, using project-based learning, where students completed <strong>3 instructor-assigned projects per day</strong> as well as a capstone project designed by the student.</li>
-                        <li><strong>worked both independently and with a team of 2-4 instructors</strong> to build a quality learning environment. collaborated with instructors to individualize student help to match their skill set and learning style, as well as maximize their learning potential.</li>
-                        <li><strong>developed new curriculums</strong> for each course and tailored them to students' interests, age ranges, skill level, etc. <strong>added interactive bonus problems</strong> if students were not sufficiently challenged by a project, such as recreating the code from a demonstration, extra tasks for lesson plans, etc.</li>
-                        <li>worked side-by-side with students on <strong>capstone projects</strong> to not only <strong>guide them through the brainstorming, coding, and debugging processes</strong>, but to also teach them the skills to independently build their own projects.</li>
+                        <li><strong>developed new products/curriculums</strong> from <strong>conception to launch</strong> that tailored lessons to <strong>education market standards</strong>.</li>
+                        <li>worked both <strong>independently and with a team of 2-4 instructors</strong> when <strong>coordinating product development and fulfilling customer/student needs</strong>.</li>
+                        <li>demonstrated <strong>strong foundational coding principles</strong> and <strong>strong communication skills</strong> via live coding lessons and individualized student help.</li>
                     </ul>
                 </div>
             )
@@ -73,7 +73,7 @@ const Experience = (() => {
                 <div className="pixel box">
                     <div className="column">
                         <h2>2024: REED HACKATHON</h2>
-                        <p>📍 Reed College, portland, or</p>
+                        <p>📍 Reed College, Portland, OR</p>
                     </div>
 
                     <ul>
@@ -89,11 +89,13 @@ const Experience = (() => {
                 <div className="pixel box">
                     <div className="column">
                         <h2>2024: WEB DEVELOPMENT INTERN</h2>
-                        <p>📍 SciQuel (a harvard innovation labs participant) - cambridge, ma</p>
+                        <p>📍 SciQuel (A Harvard Innovation Labs Participant) - Cambridge, MA</p>
                     </div>
 
                     <ul>
-                        <li><strong>spearheaded the development of a new drag-and-drop feature</strong> that utilizes <strong>react.js</strong> to interact with <strong>abstract syntax trees</strong>.</li>
+                        <li>showcased problem-solving ability as a <strong>frontend developer</strong> in <strong>react, typescript, and javascript</strong> and <strong>produced weekly deliverables</strong>.</li>
+                        <li><strong>collaborated cross-functionally</strong> with the UI/UX design team, frontend development team, and backend development team to <strong>coordinate product development</strong>, showcasing strong <strong>organizational and interpersonal communication skills</strong>.</li>
+                        <li><strong>analyzed the science education market trends, competitors, and customers</strong> to define a <strong>product vision and strategy</strong> for SciQuel’s web platform.</li>
                     </ul>
                 </div>
             )
@@ -104,7 +106,7 @@ const Experience = (() => {
     }, [currIndex]) // again only runs when currIndex changes
 
     return (
-        <div className="experience">
+        <div className="experience" id="experience">
             <h1 id="myExperienceTitle">
                 <span className='pixel header1-pixel'>𓏲 ๋ </span><span className="cursive">M</span><span className="pixel">Y EXPERIENCE ⋆₊˚</span>
             </h1>

@@ -7,45 +7,29 @@ const TitlePage = (() => {
     return (
         <div className='title'>
 
-                    <h3 className='pixel'>
-                        <Typewriter
-                            onInit={(typewriter) => {
-                                typewriter.typeString('hello, world!');
-                                typewriter.pauseFor(1000);
-                                typewriter.deleteAll();
+            <img src='./memoji.png'></img>
 
-                                typewriter.typeString('welcome to my virtual universe. ');
-                                typewriter.pauseFor(500);
-                                typewriter.deleteChars(('virtual universe. ').length);
-                                typewriter.pauseFor(500);
-                                typewriter.typeString('digital portfolio. ')
+            <br></br>
 
-                                typewriter.pauseFor(500);
-                                typewriter.typeString('my name is: ');
-                                
-                                typewriter.start();
+            <h1 className='header1-pixel pixel'>
+                <Typewriter
+                    onInit={(typewriter) => {
+                        typewriter.typeString('HI INTERNET! ');
+                        typewriter.pauseFor(500);
+                        typewriter.typeString("I'M<span style='font-family: england; font-size: 1.75em'>E</span>MILY YU");
+                        
+                        typewriter.start();
 
-                            }}>
-                        </Typewriter>
-                    </h3>
-
-
-            <h1 id='emily'>
-                <span className='pixel header1-pixel'>𓏲 ๋</span><span className='cursive header1-cursive'>E</span><span className='pixel header1-pixel'>MILY YU ⋆₊˚</span>
+                    }}>
+                </Typewriter>
             </h1>
 
-            <img src="./memoji.png"></img>
-
-            <div className='two-row'>
-
-                <h3 className='pixel'>
-                    a.k.a.
-                </h3>
-                <h2>
-                    {/* 善宜, my chinese name/middle name!*/}
-                    <span className='cursive header2-cursive'>S</span>    <span className='pixel header2-pixel'>HAN-YI</span>
-                </h2>
-
+            <h2 className="pixel">i'm a <strong>webdev-turned-product human</strong> with a passion for all things people (& agile). nice to meet you! 👋</h2>
+            
+            <div className="three-buttons">
+                <h3 className="pixel" onClick={() => document.getElementById("elevatorPitchTitle").scrollIntoView({behavior: 'smooth'})}>ELEVATOR PITCH</h3>
+                <h3 className="pixel" onClick={() => document.getElementById("experience").scrollIntoView({behavior: 'smooth'})}>MY EXPERIENCE</h3>
+                <h3 className="pixel" onClick={() => document.getElementById("projects").scrollIntoView({behavior: 'smooth'})}>PROJECTS</h3>
             </div>
 
         </div>

@@ -31,6 +31,7 @@ npm run start
 4. If not already automatically prompted, open the following link on your preferred browser: [**https://localhost:3000**](https://localhost:3000)
 
 ## 🎮 DEMOS
+(from the first version of the site, subject to change!)
 
 _Typewriter loads on scroll_
 ![](./visuals/onscroll.gif)

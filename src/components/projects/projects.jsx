@@ -17,12 +17,25 @@ const Projects = (() => {
 
         let currReadMe;
 
-        if (buttonPressed === "skribblio") {
+        if (buttonPressed == "cvweb") {
+            fetch("./readMes/cvweb.md")
+                .then(cvweb => cvweb.text())
+                .then(md => {
+                    const converter = new Showdown.Converter();
+                    currReadMe = converter.makeHtml(md);
+                    setReadMe(currReadMe);
+
+                    setLink("https://github.com/00eemsy/my-cv-website");
+                })
+                .catch(error => {
+                    console.error(`error fetching readme: ${error}`);
+                })
+        } else if (buttonPressed === "skribblio") {
             fetch("./readMes/skribblio.md") // fetches skribblio project's readme from public folder...
                 .then(skribblio => skribblio.text()) // ... md file ➡️ md text/raw md ... 
                 .then(md => {
                     const converter = new Showdown.Converter(); // ... uses Showdown to convert raw md ➡️ raw html ... 
-                    currReadMe =  converter.makeHtml(md);
+                    currReadMe = converter.makeHtml(md);
                     setReadMe(currReadMe); // ... and then updates the state variable with the raw html!
                     
                     setLink("https://github.com/ycheuk/skribblio");
@@ -74,7 +87,7 @@ const Projects = (() => {
     }, [buttonPressed]); // only runs when the button is clicked
 
     return (
-        <div className="projects">
+        <div className="projects" id="projects">
             <h1>
                 <span className="pixel">*ੈ₊˚</span><span className="cursive">P</span> <span className="pixel"> ROJECTS</span>
             </h1>
@@ -82,6 +95,8 @@ const Projects = (() => {
             <div className="flexy"> 
                 <div className="buttons">
                         {/* when clicked, updates state variable to the appropriate value */}
+                        <h2 onClick={() =>
+                            setButtonPressed("cvweb")}>⌕ <u className="pixel">MY CV WEBSITE</u></h2>
                         <h2 onClick={() =>
                             setButtonPressed("skribblio")}>⌕ <u className="pixel">SKRIBBL.IO</u></h2>
                         <h2 onClick={() => 
