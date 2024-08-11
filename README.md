@@ -5,7 +5,7 @@ I created my website primarily with React.js, HTML, and CSS. I also employ vario
 
 Enjoy!
 
-⬇️ Opening still of `my-cv-website`
+⬇️ Opening still of `my-cv-website` (from the first version of the site, subject to change!)
 ![](./visuals/opening-screenshot.png)
 <br>
 
