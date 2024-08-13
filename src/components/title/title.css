@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     
-    margin-top: 5%;
+    /* margin-top: 5%; */
     margin-left: 10%;
     margin-right: 10%;
 
@@ -70,7 +70,7 @@
 .title img {
     /* width: 20%; */
     align-self: center;
-    margin-top: 2.5%;
+    margin-top: 1%;
 
     border-radius: 50%;
     background-color: #b1e0ed;
