@@ -28,7 +28,7 @@ const ElevatorPitch = (() => {
                     const typewriter2 = (
                         <Typewriter
                             onInit={(typewriter2) => {
-                                typewriter2.typeString('... plus agile/scrum methodologies and various other technologies from the google/microsoft suites!');
+                                typewriter2.typeString('... plus agile/scrum methodologies and google/microsoft suites!');
                                 typewriter2.start();
                             }}>
                         </Typewriter>
