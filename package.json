@@ -1,7 +1,7 @@
 {
-  "name": "x",
+  "homepage": "http://00eemsy.github.io/my-cv-website",
+  "name": "my-cv-website",
   "version": "0.1.0",
-  "homepage": "https://00eemsy.github.io/my-cv-website",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
