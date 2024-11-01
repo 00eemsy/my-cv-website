@@ -1,7 +1,11 @@
 ## 👩🏻‍💻 DESCRIPTION
-Welcome to `my-cv-website 🧊`, a.k.a. my personal website/digital portfolio! This was initially created in 2024 in order to independently expand upon the React.js skills I was learning in my Web Development internship at SciQuel (which I previously had no experience in) & generally grow my understanding of WebDev concepts (such as responsive design, UI/UX, etcetera.). 
+Welcome to `my-cv-website 🧊`, a.k.a. my personal website/digital portfolio! This was initially created in 2024 in order to independently expand upon the React.js skills I was learning in my Web Development internship at SciQuel (which I previously had no experience in) & generally grow my understanding of WebDev concepts (such as UI/UX design, client-server interactions, etcetera.). 
 
 I created my website primarily with React.js, HTML, and CSS. I also employ various JavaScript libraries/APIs, such as [**TypewriterJS**](https://github.com/tameemsafi/typewriterjs#readme), [**ReactSlider**](https://zillow.github.io/react-slider/) (with inspiration from this [**tutorial**](https://blog.logrocket.com/react-slider-tutorial/)), [**ShowdownJS**](https://github.com/showdownjs/showdown), and Intersection Observer.
+
+This website is a continuous work in progress, so in the future I'd like to work on developing the following within my website...:
+- [ ] Making the website more responsive to different browser sizes/mobile browsers.
+- [ ] Implementing the stylization with tailwindCSS (as opposed to raw CSS) to better understand the modern WebDev tech stack.
 
 Enjoy!
 
