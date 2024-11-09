@@ -59,12 +59,11 @@ const ElevatorPitch = (() => {
                         <h2 className="pixel" id="MAAG">ME AT A GLANCE</h2>
                             <div className="pixel box box-inline">
                                 <ul>
-                                    <li>aspiring <strong>product manager</strong>... </li>
+                                    <li>aspiring <strong>webdev/product manager</strong>... </li>
                                     <li>... with a strong technical foundation in webdev (think react, javascript, etc.) and object-oriented programming (think python, c++, etc.) 🐍☕!</li>
-                                        <ul>
-                                            <li>tangent: i actually got into product because as a dev, i've learned how powerful a strong pm can be, and i absolutely love people and problem-solving! 🧩</li>
-                                        </ul>
+                                        <ul>and practical product management experience during my dev work (think agile, scrum, product design, etc.)!</ul>
                                     <li>currently a junior studying computer science @ reed college (located in the beautiful portland, or 🌲)</li>
+                                    <li>has worked for: disney (incoming!), sciquel (a harvard innovation labs startup) 🐭</li>
                                     <li>proud to be a first-generation, taiwanese-american woman in tech!!! 👩🏻‍💻🇹🇼</li>
                                     <li>now the fun stuff: i'm a san franciscan, born and raised 🌁! i also ADORE kitties 🐈‍⬛ and will kick your butt at mahjong and/or poker. 🀄</li>
                                     <li>welcome! 🫶</li>

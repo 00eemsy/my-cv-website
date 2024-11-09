@@ -24,7 +24,7 @@ const TitlePage = (() => {
                 </Typewriter>
             </h1>
 
-            <h2 className="pixel">i'm a <strong>webdev-turned-product human</strong> with a passion for all things people (& agile). nice to meet you! 👋</h2>
+            <h2 className="pixel">i'm a <strong>webdev and product human</strong> with a passion for all things tech & people. nice to meet you! 👋</h2>
             
             <div className="three-buttons">
                 <h3 className="pixel" onClick={() => document.getElementById("elevatorPitchTitle").scrollIntoView({behavior: 'smooth'})}>ELEVATOR PITCH</h3>

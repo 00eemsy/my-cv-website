@@ -56,7 +56,7 @@ const Experience = (() => {
             expText = ( // define text description for code coach... 
                 <div className="pixel box">
                     <div className="column">
-                        <h2>2023: CODE COACH</h2>
+                        <h2>2023: CODE COACH 👩🏻‍🏫</h2>
                         <p>📍 theCodeSchoolSF - San Francisco, CA</p>
                     </div>
 
@@ -72,8 +72,8 @@ const Experience = (() => {
             expText = ( // define text description for hackathon... 
                 <div className="pixel box">
                     <div className="column">
-                        <h2>2024: REED HACKATHON</h2>
-                        <p>📍 Reed College, Portland, OR</p>
+                        <h2>2024: REED HACKATHON 🤖</h2>
+                        <p>📍 Reed College - Portland, OR</p>
                     </div>
 
                     <ul>
@@ -88,7 +88,7 @@ const Experience = (() => {
             expText = ( // define text description for sciquel webdev internship... 
                 <div className="pixel box">
                     <div className="column">
-                        <h2>2024: WEB DEVELOPMENT INTERN</h2>
+                        <h2>2024: WEB DEVELOPMENT INTERN 💻</h2>
                         <p>📍 SciQuel (A Harvard Innovation Labs Participant) - Cambridge, MA</p>
                     </div>
 
@@ -97,6 +97,15 @@ const Experience = (() => {
                         <li><strong>collaborated cross-functionally</strong> with the UI/UX design team, frontend development team, and backend development team to <strong>coordinate product development</strong>, showcasing strong <strong>organizational and interpersonal communication skills</strong>.</li>
                         <li><strong>analyzed the science education market trends, competitors, and customers</strong> to define a <strong>product vision and strategy</strong> for SciQuel’s web platform.</li>
                     </ul>
+                </div>
+            )
+        } else if (currIndex === 4) {
+            expText = (
+                <div className="pixel box">
+                    <div className="column">
+                        <h2>2025: PRODUCTION TECHNOLOGY/SWE INTERN 🐭</h2>
+                        <p>📍 Disney/Walt Disney Animation Studios - Burbank, CA</p>
+                    </div>
                 </div>
             )
         }
@@ -120,7 +129,7 @@ const Experience = (() => {
                 markClassName="mark"
                 onChange={changeIndex} // updates index so text description can update
                 min={0}
-                max={3} // creates 4 marks
+                max={4} // creates 4 marks
                 defaultValue={0}
                 value={currIndex}
                 renderMark={(props) => {
