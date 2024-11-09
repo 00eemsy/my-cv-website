@@ -11,7 +11,7 @@ const ElevatorPitch = (() => {
 
 
     useEffect(() => {
-        const observer = IntersectionObserver(entries => {
+        const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
 
                 if (entry.isIntersecting) { // when a singular pixel of *ੈ₊˚ELEVATOR PITCH is on-screen...

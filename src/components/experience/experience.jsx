@@ -15,7 +15,7 @@ const Experience = (() => {
 
     useEffect(() => {
         // defining a filler observer so calling observer.observe() outside of the if statement doesn't break the website 😭
-        let observer = IntersectionObserver(entries => { 
+        let observer = new IntersectionObserver(entries => { 
             console.log(`entries: ${entries}`);
         });
 
