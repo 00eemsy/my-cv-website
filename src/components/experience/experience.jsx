@@ -21,7 +21,7 @@ const Experience = (() => {
 
         if (currIndex === 0) { // at start of slider!
 
-            observer = IntersectionObserver(entries => {
+            observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
 
                     if (entry.isIntersecting) { // when a singular pixel of 𓏲 MY EXPERIENCE is on-screen...
