@@ -19,7 +19,7 @@ const ElevatorPitch = (() => {
                         <Typewriter
                             onInit={(typewriter) => {
                                 // typewriter.deleteAll();
-                                typewriter.typeString('... plus node.js, express.js, socket.io, mips assembly, and more!');
+                                typewriter.typeString('... plus materialUI, RESTful APIs, node.js, tailwindCSS, cypress, express.js, socket.io, mips assembly, and more!');
                                 typewriter.start();
                             }}>
                         </Typewriter>
@@ -28,7 +28,7 @@ const ElevatorPitch = (() => {
                     const typewriter2 = (
                         <Typewriter
                             onInit={(typewriter2) => {
-                                typewriter2.typeString('... plus agile/scrum methodologies and google/microsoft suites!');
+                                typewriter2.typeString('... plus jira, agile/scrum methodologies, google/microsoft suites, and mandarin chinese!');
                                 typewriter2.start();
                             }}>
                         </Typewriter>
@@ -60,12 +60,12 @@ const ElevatorPitch = (() => {
                             <div className="pixel box box-inline">
                                 <ul>
                                     <li>aspiring <strong>webdev/product manager</strong>... </li>
-                                    <li>... with a strong technical foundation in webdev (think react, javascript, etc.) and object-oriented programming (think python, c++, etc.) 🐍☕!</li>
+                                    <li>... with a strong technical foundation in webdev (think react, javascript, etc.) and object-oriented programming (think python, c++, etc.) 🐍⚛️☕!</li>
                                         <ul>and practical product management experience during my dev work (think agile, scrum, product design, etc.)!</ul>
-                                    <li>currently a junior studying computer science @ reed college (located in the beautiful portland, or 🌲)</li>
-                                    <li>has worked for: disney (incoming!), sciquel (a harvard innovation labs startup) 🐭</li>
+                                    <li>currently a senior studying computer science @ reed college (located in the beautiful portland, or 🌲)</li>
+                                    <li>past exp: ux researcher @ reed (thesis research on elderly accessibility! 🥳), swe intern @ disney, webdev intern @ sciquel (a harvard innovation labs startup) 🐭</li>
                                     <li>proud to be a first-generation, taiwanese-american woman in tech!!! 👩🏻‍💻🇹🇼</li>
-                                    <li>now the fun stuff: i'm a san franciscan, born and raised 🌁! i also ADORE kitties 🐈‍⬛ and will kick your butt at mahjong and/or poker. 🀄</li>
+                                    <li>now the fun stuff: i'm a san franciscan, born and raised 🌁! i also ADORE kitties 🐈‍⬛ and will kick your butt at mahjong. 🀄</li>
                                     <li>welcome! 🫶</li>
                                 </ul>
                             </div>
@@ -112,6 +112,10 @@ const ElevatorPitch = (() => {
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAUlEQVR4nO2av0scQRTHP3hqqtMjnAmEBH9A2iDiH6CFkGAXtUkag0LEyiYQiNU1WonYaCE2VnoHUfEPEGxMY+F/IEmUJAoX7rhCTSYsTGR57Lor3t7M4nzgNbP3hvd933vLHHPgcDhuSwdQAqqAsiyqurZ8HCElCwpWEbEZR4iNTigRlThCVEoiEtMFKidEYLrTyjkiMN1p5RwRmO60co4ITHdaOUcEpjutnCMC051WzhGB6U4rGx2Js/dn4JX+id0MPAGGga20CPkDvIuoZUJ/zmohC3GKAeZsFvIXeCaeTQHrwAyQ0WtPgV2bhfwQ64MibwWYBn7bPiPfxfpAHfY2IuQSaBPPZoFa2oQo/UaSPAYKwFmahPwEekJqyAIfgXIahHjxSw96GM+BozQI+f8q3gb6Qup5CBynQYg/9oChgLz3JoVc3WHvgsjraoSQmn51Lot17+vg50HAsI8BxYA9yyK3NWkhO0C3zvNOrvO6wHNgXOzbKe43vNOuRw44FPvui9xHSQt5TXze+vJGAtyaBJaAD3rA/YwmLeTE58hNNAFffHmnAYfGMFoCHEtkRr4BvREiFgPyvgIvImrJhsxQIkK8uABW9eEvp7vodfwNcBCRtwa81MeTDNAO9AOfdJNUI4WYiPtzGVq0oFBVj+vpvBZTsdSJjbh/GHA4HFzzDyHa7x0cR+5hAAAAAElFTkSuQmCC"
                                             title="javascript"
                                             alt="javascript logo">
+                                            </img>
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjklEQVR4nO2Wr0sEQRTHP/gD4bCcopgUBEHEZDQIFotgVcMVo8EitjMKgkXEf0CTzWA0CHpGBYOYBBHFYBGDSRwZGOF4zN7uyXkzg+8Djw379s33A7O7A4qiNMslYCKvWhERk0jlEjqgURFB6IBGRQShAxoVEYQOaFREEDqgURFB6IBGRQShAxoVEYQOaFRE8C9Ffkv9jDtgHZgBBoGyq1Fg1t17il1kF+gu0F+LWeS0if7rvxbZ9pTE12OfnRd9dlsdAPfAM3AGbAD9bvu1/WUvOm9I9B1m9L0BHzGLlETfSau3dbtExkXfCHCVokjV09sBLGe8E9GKvAMTGRk6gRXgJQURW6/AdIMsAxn/kOhEbH0Ce0BfRh77UbhNQaT+M1sFej0zFlMS+akHYNKzxZITMcCxmNETs8iCO299ee5tiRnDMYvYH6BlDFgD9t1Za9VzIq6kIJJHF3CTukgJOCq4TjARe67aAZaAKSdWdtc5YBN4bGKdlou0q3IJHdCoiOAigpAmp85laEVRaMg36b7oy/I7eqEAAAAASUVORK5CYII=" 
+                                            title="typescript"
+                                            alt="typescript">
                                             </img>
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nO3aT0sbQRjH8a8YiwrRHoq1f3xTkoOeijWtfQ0F8VwS/7wALR7al5C0UEGsYqElBMGKUOlFjEK0GCt6c2ThEUrcdTObTZ9Z2R88xw3zyczuzs4MpLm/6QNywAKwCfwG/gBXwDGwC3wE8kAWB/MAmAHqgGmxGsA0kMGRDAHfLQDNte5C72RkCJk26zPQpQmZjAFxU2OakK9NjSkBz6XKlpAvmpCzpsZ4gJuMWEJOFB2YGCFeqaW5IWUBePUpyRDTZqWQtEcsozq0eoA3MoVodOB+CIKYgGrIe2vKZn72BKj+p8a3CjH/VAUYDkP0AzsKCBuIAbblsyEws0oIW4gBCkGIh8B5giB/gUE/SF4REQVigJd+kOUEQpb8IFuKiJoME2NZ3tP1VmqKkIIsXBjLOvCDXCr1RBF4CvyKcP1FnJB9+TejLCIMyLVRECYIUouIeAbMA4cKPXoQ182eE4RRqqof5H2EH8oq9YSRWoxreQdFhAEm/CBZn5URlyFn8rDwTTFBkHeETON/JgCyHTaNRz5aKg5DfgCPaTHe5+RrYA04dQByKm15BXTTodgMQ6djYi61pBAS3iOlkH2UxEDCth/UchIjpKHHgBVLyF37KKuakPEYn1wvNCFdspnZLsJbpO7YW7vVeNPpjTYQ34BHOJIeOZZhsw1xBLyVa51LVpZfP8hBmrocrPEO2OzJnsscMAr0ajc2DR3KNd642oFqa6WvAAAAAElFTkSuQmCC"
                                             title="python"

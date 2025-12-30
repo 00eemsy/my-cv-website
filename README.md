@@ -5,7 +5,7 @@ I created my website primarily with React.js, HTML, and CSS. I also employ vario
 
 This website is a continuous work in progress, so in the future I'd like to work on developing the following within my website...:
 - [ ] Making the website more responsive to different browser sizes/mobile browsers.
-- [ ] Implementing the stylization with tailwindCSS (as opposed to raw CSS) to better understand the modern WebDev tech stack.
+- [ ] Implementing the stylization with tailwindCSS or materialUI (as opposed to raw CSS) to better understand the modern WebDev tech stack.
 
 Enjoy!
 

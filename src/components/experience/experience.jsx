@@ -89,7 +89,7 @@ const Experience = (() => {
                 <div className="pixel box">
                     <div className="column">
                         <h2>2024: WEB DEVELOPMENT INTERN 💻</h2>
-                        <p>📍 SciQuel (A Harvard Innovation Labs Participant) - Cambridge, MA</p>
+                        <p>📍 SciQuel (A Harvard Innovation Labs Participant) - Cambridge, MA (Remote)</p>
                     </div>
 
                     <ul>
@@ -103,9 +103,33 @@ const Experience = (() => {
             expText = (
                 <div className="pixel box">
                     <div className="column">
-                        <h2>2025: PRODUCTION TECHNOLOGY/SWE INTERN 🐭</h2>
+                        <h2>2025: SWE INTERN 🐭</h2>
                         <p>📍 Disney/Walt Disney Animation Studios - Burbank, CA</p>
                     </div>
+
+                    <ul>
+                        <li>created a brand-new <strong>react.ts frontend</strong> client and built upon <strong>python tornado server</strong> code for an in-house notification
+                        animator tool, utilizing RESTful APIs and websockets.</li>
+                        <li>gathered user requirements from animators and created a <strong>figma prototype</strong> responding to user pain points,
+                        highlighting user workflow, and an accessible UI.</li>
+                        <li><strong>roadmapped</strong> the development of the new frontend and managed my own epic and agile sprints on <strong>jira</strong> with tickets.</li>
+                        <li>developed end-to-end proof-of-concept <strong>QA tests with cypress</strong> and containerized website for deployment.</li>
+                    </ul>
+                </div>
+            )
+        } else if (currIndex === 5) {
+            expText = (
+                <div className="pixel box">
+                    <div className="column">
+                        <h2>2025/2026: LEAD UX RESEARCHER 🥽</h2>
+                        <p>📍 Reed College - Portland, OR</p>
+                    </div>
+
+                    <ul>
+                        <li>led <strong>HCI</strong> investigation exploring the <strong>accessibility</strong> of various icon types within the context of a <strong>UI for elderly users</strong>.</li>
+                        <li>self-directed <strong>senior thesis research</strong> from ideation to publishing, including <strong>analyzing statistics</strong>, designing <strong>UI/UX wireframes</strong>,
+                        writing a <strong>scientific research paper</strong>, and more.</li>
+                    </ul>
                 </div>
             )
         }
@@ -129,7 +153,7 @@ const Experience = (() => {
                 markClassName="mark"
                 onChange={changeIndex} // updates index so text description can update
                 min={0}
-                max={4} // creates 4 marks
+                max={5} // creates 4 marks
                 defaultValue={0}
                 value={currIndex}
                 renderMark={(props) => {
