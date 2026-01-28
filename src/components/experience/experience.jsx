@@ -129,6 +129,7 @@ const Experience = (() => {
                         <li>led <strong>HCI</strong> investigation exploring the <strong>accessibility</strong> of various icon types within the context of a <strong>UI for elderly users</strong>.</li>
                         <li>self-directed <strong>senior thesis research</strong> from ideation to publishing, including <strong>analyzing statistics</strong>, designing <strong>UI/UX wireframes</strong>,
                         writing a <strong>scientific research paper</strong>, and more.</li>
+                        <li>you can find more about my research in <strong id="proj-btn" onClick={() => document.getElementById("projects").scrollIntoView({behavior: 'smooth'})}>projects</strong>!</li>
                     </ul>
                 </div>
             )

@@ -128,3 +128,7 @@
 .experience strong {
     color: #7ad3ec;
 }
+
+#proj-btn {
+    cursor: pointer;
+}

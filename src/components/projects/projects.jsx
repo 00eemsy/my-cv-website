@@ -9,8 +9,8 @@ const Projects = (() => {
     const [link, setLink] = useState(null); // to track what hyperlink to load
 
     useEffect(() => { // onLoad set readme to skribblio's
-        setButtonPressed("skribblio");
-        setLink("https://github.com/ycheuk/skribblio");
+        setButtonPressed("thes");
+        setLink("https://github.com/00eemsy/thes");
     }, [])
 
     useEffect(() => {
@@ -82,6 +82,19 @@ const Projects = (() => {
                 .catch(error => {
                     console.error(`error fetching readme: ${error}`);
                 })
+        } else if (buttonPressed === "thes") {
+            fetch("./readMes/thes.md")
+                .then(thes => thes.text())
+                .then(md => {
+                    const converter = new Showdown.Converter();
+                    currReadMe =  converter.makeHtml(md);
+                    setReadMe(currReadMe);
+                    
+                    setLink("https://github.com/00eemsy/thes");
+                })
+                .catch(error => {
+                    console.error(`error fetching readme: ${error}`);
+                })
         }
 
     }, [buttonPressed]); // only runs when the button is clicked
@@ -95,6 +108,8 @@ const Projects = (() => {
             <div className="flexy"> 
                 <div className="buttons">
                         {/* when clicked, updates state variable to the appropriate value */}
+                        <h2 onClick={() =>
+                            setButtonPressed("thes")}>⌕ <u className="pixel">HCI/UX RESEARCH</u></h2>
                         <h2 onClick={() =>
                             setButtonPressed("cvweb")}>⌕ <u className="pixel">MY CV WEBSITE</u></h2>
                         <h2 onClick={() =>
