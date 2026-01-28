@@ -61,6 +61,7 @@
 
 .buttons {
     margin-right: 5%;
+    cursor: pointer;
 }
 
 .scroll-box { 

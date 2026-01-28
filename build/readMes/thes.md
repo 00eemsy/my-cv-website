@@ -22,8 +22,7 @@ _💭: Why choose to study age-based accessibility?_
 
 ## 📚 MY "TECH" STACK
 Here's what I used to "deploy" my senior thesis: 
-* `Figma` (for UI prototyping, creating user flows for Maze testing) ➡️ Find my designs [here](https://www.figma.com/design/NPirTZeYIWfw8ulIPyaSuq/THES?node-id=0-1&t=FIDbhARIE04f4RfA-1) 
-![](./visuals/fig4thes.png)
+* `Figma` (for UI prototyping, creating user flows for Maze testing) ➡️ Find my designs [here](https://www.figma.com/design/NPirTZeYIWfw8ulIPyaSuq/THES?node-id=0-1&t=FIDbhARIE04f4RfA-1) ![]('./visuals/fig4thes.png')
 * `Maze` (for running user study, data collection) ➡️ Demos/link coming soon...
 * `Prolific` (for recruitment) ➡️ Demos/link coming soon...
 * `Python3` (for data analysis) ➡️ Coming to repository soon...

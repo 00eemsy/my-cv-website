@@ -28,7 +28,7 @@ const ElevatorPitch = (() => {
                     const typewriter2 = (
                         <Typewriter
                             onInit={(typewriter2) => {
-                                typewriter2.typeString('... plus jira, agile/scrum methodologies, google/microsoft suites, and mandarin chinese!');
+                                typewriter2.typeString('... plus Certified ScrumMaster® (CSM), jira, agile/scrum methodologies, google/microsoft suites, and mandarin chinese!');
                                 typewriter2.start();
                             }}>
                         </Typewriter>
